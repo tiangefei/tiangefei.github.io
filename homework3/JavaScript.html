@@ -14,17 +14,31 @@
         
         <div id="div1" align="center">
             <h1> This is a empty page now</h1>
+            <h1> Please type addVideo() in the console</h1>
+        </div>
+
+        <div id="div2" align="center">
+                
+        </div>
+
+        <div id="div3" align="center">
+                
         </div>
 
         <script>
             
-            function addElement(){
+            function addVideo(){
                 var iframe = document.createElement('iframe');
                 iframe.src = 'https://www.youtube.com/embed/zHPTzFM_DU4?start=16';
                 iframe.width = '900';
                 iframe.height = '480';
 
-                document.getElementById("div1").replaceWith(iframe);
+                var h1 = document.createElement("H1");
+                h1.innerHTML = "I can watch this all day!";
+                
+                document.getElementById("div1").remove();
+                document.getElementById("div2").appendChild(h1);
+                document.getElementById("div3").appendChild(iframe);
             }
 
         </script>
