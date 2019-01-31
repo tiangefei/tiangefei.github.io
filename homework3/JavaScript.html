@@ -15,6 +15,7 @@
         <div id="div1" align="center">
             <h1> This is a empty page now</h1>
             <h1> Please type addVideo() in the console</h1>
+            <h1> Or click the button below</h1>
         </div>
 
         <div id="div2" align="center">
@@ -37,12 +38,21 @@
                 h1.innerHTML = "I can watch this all day!";
                 
                 document.getElementById("div1").remove();
+                document.getElementById("add").remove();
                 document.getElementById("div2").appendChild(h1);
                 document.getElementById("div3").appendChild(iframe);
             }
 
         </script>
 
+        <div id="add" align="center">
+            <button type="button" onclick=addVideo()>Add Video</button>
+        </div>
+
+        <div id="button" align="center">
+            <a href="../index.html">Back to homepage</a>
+        </div>
+        
     </body>
 
 </html>
