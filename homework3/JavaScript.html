@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript homework</title>
+        <style>
+            h1{color:red;
+            font-size: 20px;
+            margin: 0;}
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="div1" align="center">
+            <h1> This is a empty page now</h1>
+        </div>
+
+        <script>
+            
+            function addElement(){
+                var iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/zHPTzFM_DU4?start=16';
+                iframe.width = '900';
+                iframe.height = '480';
+
+                document.getElementById("div1").replaceWith(iframe);
+            }
+
+        </script>
+
+    </body>
+
+</html>
