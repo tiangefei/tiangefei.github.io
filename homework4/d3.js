@@ -70,7 +70,6 @@ function showAve() {
 
     newRects.exit().remove();
 }
-showMine();
-showAve();
+
 
 

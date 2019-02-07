@@ -8,6 +8,7 @@
 
     <body>
         <h1 align="center" id="title">D3 homework</h1>
+        <h5 align="center" id="non-title">My energy consumption compare to the average household consumption in my area</h5>
 
         <div id="showMine" align="center">
             <button type="button" onclick=showMine()>Show My Usage</button>
@@ -17,7 +18,7 @@
             <button type="button" onclick=showAve()>Show Average Usage</button>
         </div>
         
-        <svg width=1000 height=500> 
+        <svg width=400 height=500> 
             <rect class="myRect", x="140" y="400" width="20" height="20" fill="black"/>
             <rect class="myRect", x="200" y="400" width="20" height="20" fill="black"/>
             <rect class="myRect", x="260" y="400" width="20" height="20" fill="black"/>
@@ -31,6 +32,7 @@
             <line x1="100px" y1="100px" x2="100px" y2="420px" stroke="black" stroke-width="1px"></line>
             <line x1="100px" y1="421px" x2="380px" y2="421px" stroke="black" stroke-width="1px"></line>
         </svg>
+        
         <script src="d3.js"></script>
 
         <div id="button" align="center">
