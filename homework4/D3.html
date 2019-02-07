@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>D3 homework</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+
+    <body>
+        <h1 align="center" id="title">D3 homework</h1>
+
+        <div id="showMine" align="center">
+            <button type="button" onclick=showMine()>Show My Usage</button>
+        </div>
+
+        <div id="showAve" align="center">
+            <button type="button" onclick=showAve()>Show Average Usage</button>
+        </div>
+        
+        <svg width=1000 height=500> 
+            <rect class="myRect", x="140" y="400" width="20" height="20" fill="black"/>
+            <rect class="myRect", x="200" y="400" width="20" height="20" fill="black"/>
+            <rect class="myRect", x="260" y="400" width="20" height="20" fill="black"/>
+            <rect class="myRect", x="320" y="400" width="20" height="20" fill="black"/>
+
+            <rect class="aveRect", x="160" y="400" width="20" height="20" fill="red"/>
+            <rect class="aveRect", x="220" y="400" width="20" height="20" fill="red"/>
+            <rect class="aveRect", x="280" y="400" width="20" height="20" fill="red"/>
+            <rect class="aveRect", x="340" y="400" width="20" height="20" fill="red"/>
+            
+            <line x1="100px" y1="100px" x2="100px" y2="420px" stroke="black" stroke-width="1px"></line>
+            <line x1="100px" y1="421px" x2="380px" y2="421px" stroke="black" stroke-width="1px"></line>
+        </svg>
+        <script src="d3.js"></script>
+
+        <div id="button" align="center">
+            <a href="../index.html">Back to homepage</a>
+        </div>
+    </body>
+</html>

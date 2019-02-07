@@ -1,46 +1,40 @@
-console.log("hahaha");
-
-var jstitle = document.getElementById("title");
-
-jstitle.className = "big";
-jstitle.style.color = "red";
-jstitle.style.fontFamily = "Comic Sans MS"
+console.log("hello!");
 
 var title = d3.select("#title");
 
 title
     .attr("class", "big")
     .style("color", "red")
-    .style("font-family", "Comic Sans MS")
-
-function changeColor(color) {
-    d3.selectAll(".dot").attr("fill", color)
-}
+    .style("font-family", "Comic Sans MS");
 
 var svg = d3.select("svg");
-var circles = svg.selectAll(".dot")
+
+function changeColor(color) {
+    svg.selectAll(".dot").attr("fill", color);
+}
 
 function dance() {
-    circles.attr("cx", function() {
+    svg.selectAll(".dot").attr("cx", function() {
         return Math.random() * 200;
     });
 }
 
 var starterData = [
-    {name:"Eric", height: 100},
-    {name:"Cric", height: 120},
-    {name:"Bric", height: 150},
-    {name:"Aric", height: 80}
-]
+    {name: "Dave", height: 72},
+    {name: "Matthew", height: 67},
+    {name: "Diana", height: 64},
+    {name: "Thor", height: 86}
+];
 
-function redrawCircle() {
-    var newCircles = svg.selectAll("dot")
+function redrawCircles() {
+
+    var newCircles = svg.selectAll(".dot")
         .data(starterData);
 
     newCircles.enter().append("circle")
         .attr("class", "dot")
         .attr("cx", function() {
-            return Math.random * 200;
+            return Math.random() * 200;
         })
         .attr("cy", 50)
         .attr("r", 20);
@@ -50,5 +44,5 @@ function redrawCircle() {
     });
 
     newCircles.exit().remove();
-}
 
+}
