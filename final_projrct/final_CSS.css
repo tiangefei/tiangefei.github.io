@@ -1,0 +1,33 @@
+body {
+    background-image: url("BG.jpg");
+   }
+h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    text-align: center;
+    color: white;
+}
+#winner{
+    margin-top: 3;
+    text-align: center;
+}
+#svgtext{
+    font-family: 'Amatic SC';
+    font-size: 20pt;
+    color:white;
+}
+#charts{
+    margin-top: 3;
+    text-align: center;
+}
+#position{
+    text-align: center;
+}

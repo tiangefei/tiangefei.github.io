@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="final_CSS.css">
+        <title>Final Project</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+
+    <body>
+        <div id="title">
+            <br>
+            <br>
+            <h1>CS:GO Damage Analyses</h1>
+        </div>
+
+        <div id="teams">
+            <br>
+            <h2>Team 1 vs. Team 2</h2>
+        </div>
+
+        <div id="title">
+                <br>
+                <h2>Game Result</h2>
+        </div>
+
+        <br>
+
+        <div id="winner">
+            <svg id="winner-line" width="800" height="100">
+                <g>
+                    <rect width="800" height="100" stroke="white" stroke-width="3"></rect>
+                    <line x1="100px" y1="50px" x2="750px" y2="50px" stroke="white" stroke-width="1px"></line>
+                    <text id="svgtext" x="10" y="35" fill="white"> Team 1</text>
+                    <text id="svgtext" x="10" y="80" fill="white"> Team 2</text>
+                </g>
+            </svg>
+        </div>
+
+        <div id="title">
+                <br>
+                <h2>Graphs</h2>
+        </div>
+
+        <br>
+
+        <div id="charts">
+            <svg id="charts-line" width="800" height="400">
+                <g>
+                    <rect x="0" y="0" width="150" height="350" stroke="white" stroke-width="3"></rect>
+                    <rect x="175" y="0" width="625" height="350" stroke="white" stroke-width="3"></rect>
+                    <text id="text" x="10" y="75" fill="white">Total damage to</text>
+                    <text id="text" x="50" y="90" fill="white">enemy</text>
+                    <text id="text" x="10" y="175" fill="white">Damage taken</text>
+                    <text id="text" x="10" y="275" fill="white">Utilities used</text>
+                    <text id="text" x="375" y="175" fill="white">Interactive horizon bar chart</text>
+                </g>
+            </svg>
+        </div>
+
+        <br>
+
+        <div id="title">
+                <br>
+                <h2>Position analyses</h2>
+        </div>
+
+        <br>
+
+        <div id="position">
+                <svg id="position-line" width="800" height="800">
+                    <g>
+                        <image xlink:href="../data/de_overpass.png" x="50" y="0" height="700" width="700"/>
+                        <rect x="175" y="725" width="450" height="50" stroke="white" stroke-width="3"></rect>
+                        <text id="text" x="190" y="755" fill="white">Trajectory</text>
+                        <text id="text" x="345" y="755" fill="white">Utilities</text>
+                        <text id="text" x="495" y="755" fill="white">Bomb planed</text>
+                    </g>
+                </svg>
+            </div>
+
+    </body>
+</html>

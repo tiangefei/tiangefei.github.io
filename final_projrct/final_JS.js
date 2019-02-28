@@ -1,4 +1,5 @@
 function showData() {
+    console.clear;
     d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
         console.log(data);  
     });
