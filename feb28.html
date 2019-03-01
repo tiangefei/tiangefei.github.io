@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Map Test Page</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+</head>
+
+<body>
+    <h1 id="title">Here's my Map</h1>
+    <svg>
+        
+    </svg>
+
+    <script>
+        d3.json("world.json", function (error, data) {
+            console.log(data);
+
+            var geoJSON = topojson.feature(data, data.objects.countries);
+
+            var proj = d3.geoMercator()
+                .fitSize([1000, 800], geoJSON);
+
+            var path = d3.geoPath()
+                .projection(proj);
+
+            var countries = svg.selectAll("path")
+                .data(geoJSON.features);
+
+            countries.enter().append("path")
+                .attr("d", function (d) {
+                    return path(d);
+                })
+
+            var points = [
+                { "name": "Boston", "coords": [-71.0589, 42.3601] },
+                { "name": "London", "coords": [-0.1278, 51.5074] }
+            ];
+
+            var points = svg.selectAll("circle")
+                .data(points);
+
+            points.enter().append("circle")
+                .attr("transform", function (d) {
+                    return "translate(" + proj(d.coords) + ")";
+                })
+
+        });
+
+    </script>
+</body>
+
+</html>
