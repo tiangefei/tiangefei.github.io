@@ -192,4 +192,24 @@ d3.queue()
             takentext.setAttribute('fill', 'gold');
             document.getElementById("charts-line").appendChild(takentext);
     }
+
+    var ratio = 6.66;
+    var greendot;
+    var reddot;
+
+    damage.forEach(function (d) {
+        greendot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            greendot.setAttribute('cx', (parseFloat(d.att_pos_x) + 4820) / ratio);
+            greendot.setAttribute('cy', 808 - (parseFloat(d.att_pos_y) + 3591) / ratio);
+            greendot.setAttribute('fill', 'green');
+            greendot.setAttribute('r', '2');
+        document.getElementById("position-line").appendChild(greendot);
+
+        reddot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            reddot.setAttribute('cx', (parseFloat(d.vic_pos_x) + 4820) / ratio);
+            reddot.setAttribute('cy', 808 - (parseFloat(d.vic_pos_y) + 3591) / ratio);
+            reddot.setAttribute('fill', 'red');
+            reddot.setAttribute('r', '2');
+        document.getElementById("position-line").appendChild(reddot);
+    });
 })
