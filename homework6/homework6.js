@@ -1,12 +1,12 @@
 function showData() {
-    d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
+    d3.csv("../data/damage.csv", function(error, data) {
         console.log(data);  
     });
 }
 
 function countAK() {
     var count = 0;
-    d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
+    d3.csv("../data/damage.csv", function(error, data) {
         data.forEach(function(d) {
             if(d.wp=="AK47") {
                 count += 1;
@@ -18,7 +18,7 @@ function countAK() {
 
 function countM4() {
     var count = 0;
-    d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
+    d3.csv("../data/damage.csv", function(error, data) {
         data.forEach(function(d) {
             if(d.wp=="M4A4") {
                 count += 1;
@@ -29,7 +29,7 @@ function countM4() {
 }
 
 function showWP() {
-    d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
+    d3.csv("../data/damage.csv", function(error, data) {
         data.forEach(function(d) {
             console.log(d.wp);
         });
@@ -38,7 +38,7 @@ function showWP() {
 
 function headRate() {
     var count = 0;
-    d3.csv("../data/esea_master_dmg_demos.part1.csv", function(error, data) {
+    d3.csv("../data/damage.csv", function(error, data) {
         data.forEach(function(d) {
             if(d.hitbox == "Head") {
                 count += 1;

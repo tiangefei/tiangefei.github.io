@@ -38,3 +38,8 @@ h2 {
 #position{
     text-align: center;
 }
+#scoretext{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:white;
+}
