@@ -28,11 +28,15 @@
         <br>
 
         <div id="winner">
-            <svg id="winner-line" width="800" height="100">
-                <rect width="800" height="100" stroke="white" stroke-width="3"></rect>
+            <svg id="winner-line" width="800" height="120">
+                <rect width="800" height="120" stroke="white" stroke-width="3"></rect>
                 <line x1="100px" y1="50px" x2="750px" y2="50px" stroke="white" stroke-width="1px"></line>
                 <text id="svgtext" x="10" y="35" fill="white"> Team 1</text>
                 <text id="svgtext" x="10" y="80" fill="white"> Team 2</text>
+                <image xlink:href="T.png" x="220" y="95" height="20" width="20"></image>
+                <text x="250" y="112" fill="white" id="legendtext"> Won as Terrorists</text>
+                <image xlink:href="CT.png" x="420" y="95" height="20" width="20"></image>
+                <text x="450" y="112" fill="white" id="legendtext"> Won as Counter-Terrorists</text>
             </svg>
         </div>
 
@@ -44,13 +48,48 @@
         <br>
 
         <div id="charts">
-            <svg id="charts-line" width="800" height="400">
+            <svg id="charts-line" width="800" height="400" xmlns:html="http://www.w3.org/1999/xhtml">
                 <rect x="0" y="0" width="150" height="350" stroke="white" stroke-width="3"></rect>
                 <rect x="175" y="0" width="625" height="350" stroke="white" stroke-width="3"></rect>
-                <text id="text" x="10" y="75" fill="white">Total damage to</text>
-                <text id="text" x="50" y="90" fill="white">enemy</text>
-                <text id="text" x="10" y="175" fill="gold">Damage taken</text>
+                <text id="text" x="10" y="75" fill="white" onclick=showDmg()>Total damage to</text>
+                <text id="text" x="50" y="90" fill="white" onclick=showDmg()>enemy</text>
+                <text id="text" x="10" y="175" fill="gold" onclick=showTaken()>Damage taken</text>
                 <text id="text" x="10" y="275" fill="white">Utilities used</text>
+
+                <g id = dmg>
+                </g>
+
+                <g id = taken>
+                </g>
+            </svg>
+        </div>
+
+        <div id="graphs">
+            <svg id="graphs-line" width="800" height="500">
+
+                <rect x="0" y="0" width="150" height="450" stroke="white" stroke-width="3"></rect>
+                <rect x="175" y="0" width="625" height="450" stroke="white" stroke-width="3"></rect>
+                <ellipse cx="75" cy="105" rx="30" ry="35" stroke="white" stroke-width="3" onclick=showHead()></ellipse>
+                <rect x="35" y="145" width="80" height="50" stroke="white" stroke-width="3" onclick=showChest()></rect>
+                <rect x="35" y="195" width="80" height="50" stroke="white" stroke-width="3" onclick=showStomach()></rect>
+                <ellipse cx="20" cy="195" rx="7" ry="45" stroke="white" stroke-width="3" onclick=showLeftArm()></ellipse>
+                <ellipse cx="130" cy="195" rx="7" ry="45" stroke="white" stroke-width="3" onclick=showRightArm()></ellipse>
+                <ellipse cx="50" cy="310" rx="15" ry="60" stroke="white" stroke-width="3" onclick=showLeftLeg()></ellipse>
+                <ellipse cx="100" cy="310" rx="15" ry="60" stroke="white" stroke-width="3" onclick=showRightLeg()></ellipse>
+                <rect x="47" y="400" width="55" height="20" stroke="white" stroke-width="3" onclick=showGeneric()></rect>
+
+                <text id="Head" x="50" y="105" fill="tomato" ></text>
+                <text id="Chest" x="50" y="180" fill="tomato"></text>
+                <text id="Stomach" x="50" y="230" fill="tomato"></text>
+                <text id="LeftArm" x="0" y="200" fill="tomato"></text>
+                <text id="RightArm" x="110" y="200" fill="tomato"></text>
+                <text id="LeftLeg" x="20" y="300" fill="tomato"></text>
+                <text id="RightLeg" x="80" y="300" fill="tomato"></text>
+                <text id="Generic" x="50" y="390" fill="tomato"></text>
+                <text id="legendtext" x="50" y="418" fill="white" onclick=showGeneric()>Generic</text>
+
+                <text x="25" y="40" fill="white" id="legendtext">Click on the body</text>
+
             </svg>
         </div>
 
@@ -70,6 +109,10 @@
                     <text id="text" x="190" y="755" fill="white">Trajectory</text>
                     <text id="text" x="345" y="755" fill="white">Utilities</text>
                     <text id="text" x="495" y="755" fill="white">Bomb planed</text> -->
+                    <circle cx='640' cy='705' r='5' fill='green'></circle>
+                    <circle cx='640' cy='725' r='5' fill='red'></circle>
+                    <text x='650' y=710 fill='white'>Attacker's position</text>
+                    <text x='650' y=730 fill='white'>Victim's position</text>
                 </svg>
         </div>
 

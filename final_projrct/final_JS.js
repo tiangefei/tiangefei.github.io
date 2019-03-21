@@ -55,6 +55,19 @@ var player_dict = {
     76561198165334100: 9
 };
 
+var hitbox_dict = {
+    "Head": 0,
+    "Chest": 0,
+    "Stomach": 0,
+    "LeftArm": 0,
+    "RightArm": 0,
+    "Generic": 0,
+    "LeftLeg": 0,
+    "RightLeg": 0
+};
+
+var all_shots = 0;
+
 d3.queue()
     .defer(d3.csv, "/data/damage.csv")
     .defer(d3.csv, "/data/game.csv")
@@ -147,28 +160,33 @@ d3.queue()
     for(var key in dmg_dict) {
         if(key != 0) {
             playerbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                playerbar.setAttribute('x', 250);
-                playerbar.setAttribute('y', 15 + parseInt(player_dict[key]) * 32.5);
-                playerbar.setAttribute('height', '10');
+                playerbar.setAttribute('x', 325);
+                playerbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
+                playerbar.setAttribute('height', '20');
                 playerbar.setAttribute('width', parseInt(dmg_dict[key]) / 8);
                 playerbar.setAttribute('fill', 'white');
-            document.getElementById("charts-line").appendChild(playerbar);
+            document.getElementById("dmg").appendChild(playerbar);
 
             playertext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-                playertext.textContent = "player" + player_dict[key];
+                if(player_dict[key] <= 4) {
+                    playertext.textContent = "Team1 : Player " + (player_dict[key] + 1);
+                }
+                if(player_dict[key] > 4 ) {
+                    playertext.textContent = "Team2 : Player " + (player_dict[key] - 4);
+                }
                 playertext.setAttribute('x', '180');
                 playertext.setAttribute('y', 35 + player_dict[key] * 32.5);
-                playertext.setAttribute('id', 'svgtext');
+                playertext.setAttribute('id', 'playertext');
                 playertext.setAttribute('fill', 'white');
             document.getElementById("charts-line").appendChild(playertext);
 
             dmgtext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                 dmgtext.textContent = dmg_dict[key];
-                dmgtext.setAttribute('x', '700');
-                dmgtext.setAttribute('y', 22.5 + player_dict[key] * 32.5);
-                dmgtext.setAttribute('id', 'scoretext');
+                dmgtext.setAttribute('x', '750');
+                dmgtext.setAttribute('y', 35 + player_dict[key] * 32.5);
+                dmgtext.setAttribute('id', 'dmgtext');
                 dmgtext.setAttribute('fill', 'white');
-            document.getElementById("charts-line").appendChild(dmgtext);
+            document.getElementById("dmg").appendChild(dmgtext);
         }
     }
 
@@ -177,20 +195,21 @@ d3.queue()
 
     for(var key in taken_dict) {
         takenbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            takenbar.setAttribute('x', 250);
-            takenbar.setAttribute('y', 25 + parseInt(player_dict[key]) * 32.5);
-            takenbar.setAttribute('height', '10');
+            takenbar.setAttribute('x', 325);
+            takenbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
+            takenbar.setAttribute('height', '20');
+            takenbar.setAttribute('id', 'takenbar')
             takenbar.setAttribute('width', parseInt(taken_dict[key]) / 8);
             takenbar.setAttribute('fill', 'gold');
-        document.getElementById("charts-line").appendChild(takenbar);
+        document.getElementById("taken").appendChild(takenbar);
 
         takentext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             takentext.textContent = taken_dict[key];
-            takentext.setAttribute('x', '700');
+            takentext.setAttribute('x', '750');
             takentext.setAttribute('y', 35 + player_dict[key] * 32.5);
-            takentext.setAttribute('id', 'scoretext');
+            takentext.setAttribute('id', 'takentext');
             takentext.setAttribute('fill', 'gold');
-            document.getElementById("charts-line").appendChild(takentext);
+            document.getElementById("taken").appendChild(takentext);
     }
 
     var ratio = 6.66;
@@ -212,4 +231,102 @@ d3.queue()
             reddot.setAttribute('r', '2');
         document.getElementById("position-line").appendChild(reddot);
     });
+
+    damage.forEach(function (d) {
+        hitbox_dict[d.hitbox] += 1;
+        all_shots += 1;
+    });
+
+
+    for(var key in hitbox_dict) {
+        document.getElementById(key).textContent = (hitbox_dict[key] / all_shots  * 100).toFixed(2) + "%";
+    }
+
+    var weapons_dict = {};
+    var weapons_count = 0;
+
+    damage.forEach(function (d) {
+        if(weapons_dict[d.wp] != undefined) {
+            weapons_dict[d.wp] += parseInt(d.hp_dmg);
+        }
+        else{
+            weapons_dict[d.wp] = parseInt(d.hp_dmg);
+            weapons_count += 1;
+        }
+    });
+
+    var weapon_text;
+    var damage_bar;
+    var count = 0;
+
+    for (var key in weapons_dict) {
+        weapon_text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            weapon_text.textContent = key;
+            weapon_text.setAttribute('x', '180');
+            weapon_text.setAttribute('y', 25 + 18 * count);
+            weapon_text.setAttribute('id', 'weapon_text');
+            weapon_text.setAttribute('fill', 'tomato');
+            document.getElementById("graphs-line").appendChild(weapon_text);
+        damage_bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            damage_bar.setAttribute('x', '260');
+            damage_bar.setAttribute('y', 13 + 18 * count);
+            damage_bar.setAttribute('height', '15');
+            damage_bar.setAttribute('width', weapons_dict[key] / 12);
+            damage_bar.setAttribute('fill', 'tomato');
+        document.getElementById("graphs-line").appendChild(damage_bar);
+
+        count += 1;
+    }
 })
+
+document.getElementById("taken").style.display = "none";
+
+function showDmg() {
+    document.getElementById("taken").style.display = "none";
+    document.getElementById("dmg").style.display = "block";
+}
+
+function showTaken() {
+    document.getElementById("taken").style.display = "block";
+    document.getElementById("dmg").style.display = "none";
+}
+var hitboxs = ["Chest", "Head", "Stomach", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Generic"];
+
+for(i = 0; i < hitboxs.length; i++) {
+    document.getElementById(hitboxs[i]).style.display = "none";
+}
+
+function showHitbox(hitbox) {
+    for(i = 0; i < hitboxs.length; i++) {
+        document.getElementById(hitboxs[i]).style.display = "none";
+    }
+    document.getElementById(hitbox).style.display = "block";
+}
+
+function showHead() {
+    showHitbox("Head");
+}
+function showChest() {
+    showHitbox("Chest");
+}
+function showStomach() {
+    showHitbox("Stomach");
+}
+function showLeftArm() {
+    showHitbox("LeftArm");
+}
+function showRightArm() {
+    showHitbox("RightArm");
+}
+function showLeftLeg() {
+    showHitbox("LeftLeg");
+}
+function showRightLeg() {
+    showHitbox("RightLeg");
+}
+function showGeneric() {
+    showHitbox("Generic");
+}
+
+
+

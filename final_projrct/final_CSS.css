@@ -26,9 +26,18 @@ h2 {
     margin-top: 3;
     text-align: center;
 }
+#graphs{
+    margin-top: 3;
+    text-align: center;
+}
 #svgtext{
     font-family: 'Amatic SC';
     font-size: 20pt;
+    color:white;
+}
+#legendtext{
+    font-family: 'Amatic SC';
+    font-size: 15pt;
     color:white;
 }
 #charts{
