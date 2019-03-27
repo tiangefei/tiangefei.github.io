@@ -277,6 +277,82 @@ d3.queue()
 
         count += 1;
     }
+
+    var dataset = []
+    for (var key in weapons_dict) {
+        var pair = [];
+        pair.push(key);
+        pair.push(weapons_dict[key]);
+        dataset.push(pair);
+    }
+    console.log(dataset);
+
+    var pie = d3.pie()
+                .sort(null)
+                .value(function(d) {
+                    return d[1]
+                });
+            
+    var piedata = pie(dataset);
+    console.log(piedata);
+
+    var width = 960;
+    var height = 500;
+
+    var outerRadius = width / 4;
+    var innerRadius = 0;
+    var arc = d3.arc()
+                .outerRadius(outerRadius)
+                .innerRadius(innerRadius);
+
+    var svg = d3.select("#pie");
+
+    var arcs = svg.selectAll('g')
+                  .data(piedata)
+                  .enter()
+                  .append('g')
+                  .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+    
+    var colors = d3.schemeCategory20;
+    arcs.append('path')
+        .attr('fill', function(d, i){
+            if(i <= 19) {
+                return colors[i];
+            }
+            else{
+                return colors[i - 19];
+            };
+        })
+        .attr('d', function(d){
+        return arc(d);
+    });
+
+    arcs.append('text')
+    .attr('transform', function(d, i){
+      var x = arc.centroid(d)[0] * 2.8;
+      var y = arc.centroid(d)[1] * 2.8;
+      return 'translate(' + x + ', ' + y + ')';
+    })
+    .attr('fill', 'white')
+    .attr('text-anchor', 'middle')
+    .text(function(d){
+      var percent = Number(d.value) / d3.sum(dataset, function(d){
+        return d[1];
+      }) * 100;
+      return d.data[0] + ' ' + percent.toFixed(1) + '%';
+    })
+
+    arcs.append('line')
+    .attr('stroke', 'white')
+    .attr('x1', function(d){ return arc.centroid(d)[0] * 2; })
+    .attr('y1', function(d){ return arc.centroid(d)[1] * 2; })
+    .attr('x2', function(d, i){
+      return arc.centroid(d)[0] * 2.5;
+    })
+    .attr('y2', function(d, i){
+      return arc.centroid(d)[1] * 2.5;
+    });
+
 })
 
 document.getElementById("taken").style.display = "none";
@@ -327,6 +403,8 @@ function showRightLeg() {
 function showGeneric() {
     showHitbox("Generic");
 }
+
+
 
 
 
