@@ -71,10 +71,12 @@ var all_shots = 0;
 d3.queue()
     .defer(d3.csv, "/data/damage.csv")
     .defer(d3.csv, "/data/game.csv")
+    .defer(d3.csv, "/data/utility.csv")
     .awaitAll(function(error, dataArray) {
 
     var damage = dataArray[0];
     var game = dataArray[1];
+    var utility = dataArray[2];
 
     var team1_score = 0;
     var team2_score = 0;
@@ -212,6 +214,39 @@ d3.queue()
             document.getElementById("taken").appendChild(takentext);
     }
 
+    var utility_dict = {};
+
+    utility.forEach(function (d){
+        if(utility_dict[d.att_id] == undefined) {
+            utility_dict[d.att_id] = 1;
+        }
+        else{
+            utility_dict[d.att_id] += 1;
+        }
+    })
+
+    console.log(utility_dict);
+
+    for(var key in utility_dict) {
+        takenbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+            takenbar.setAttribute('x', 325);
+            takenbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
+            takenbar.setAttribute('height', '20');
+            takenbar.setAttribute('id', 'takenbar')
+            takenbar.setAttribute('width', parseInt(utility_dict[key]) * 8);
+            takenbar.setAttribute('fill', 'green');
+        document.getElementById("utility").appendChild(takenbar);
+
+        takentext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            takentext.textContent = utility_dict[key];
+            takentext.setAttribute('x', '750');
+            takentext.setAttribute('y', 35 + player_dict[key] * 32.5);
+            takentext.setAttribute('id', 'takentext');
+            takentext.setAttribute('fill', 'green');
+            document.getElementById("utility").appendChild(takentext);
+    }
+
+
     var ratio = 6.66;
     var greendot;
     var reddot;
@@ -285,7 +320,6 @@ d3.queue()
         pair.push(weapons_dict[key]);
         dataset.push(pair);
     }
-    console.log(dataset);
 
     var pie = d3.pie()
                 .sort(null)
@@ -294,10 +328,9 @@ d3.queue()
                 });
             
     var piedata = pie(dataset);
-    console.log(piedata);
 
-    var width = 960;
-    var height = 500;
+    var width = 800;
+    var height = 800;
 
     var outerRadius = width / 4;
     var innerRadius = 0;
@@ -329,11 +362,18 @@ d3.queue()
 
     arcs.append('text')
     .attr('transform', function(d, i){
-      var x = arc.centroid(d)[0] * 2.8;
-      var y = arc.centroid(d)[1] * 2.8;
+        if(i % 2 == 0) {
+            var x = arc.centroid(d)[0] * 2.8;
+            var y = arc.centroid(d)[1] * 2.8;
+        }
+        else{
+            var x = arc.centroid(d)[0] * 3.5;
+            var y = arc.centroid(d)[1] * 3.5;
+        }
+     
       return 'translate(' + x + ', ' + y + ')';
     })
-    .attr('fill', 'white')
+    .attr('fill', 'gold')
     .attr('text-anchor', 'middle')
     .text(function(d){
       var percent = Number(d.value) / d3.sum(dataset, function(d){
@@ -343,28 +383,47 @@ d3.queue()
     })
 
     arcs.append('line')
-    .attr('stroke', 'white')
+    .attr('stroke', 'gold')
     .attr('x1', function(d){ return arc.centroid(d)[0] * 2; })
     .attr('y1', function(d){ return arc.centroid(d)[1] * 2; })
     .attr('x2', function(d, i){
-      return arc.centroid(d)[0] * 2.5;
+        if(i % 2 == 0) {
+            return arc.centroid(d)[0] * 2.5;
+        }
+        else{
+            return arc.centroid(d)[0] * 3.2;
+        }
     })
     .attr('y2', function(d, i){
-      return arc.centroid(d)[1] * 2.5;
+        if(i % 2 == 0) {
+            return arc.centroid(d)[1] * 2.5;
+        }
+        else{
+            return arc.centroid(d)[1] * 3.2;
+        }
     });
 
 })
 
 document.getElementById("taken").style.display = "none";
+document.getElementById("utility").style.display = "none";
 
 function showDmg() {
     document.getElementById("taken").style.display = "none";
     document.getElementById("dmg").style.display = "block";
+    document.getElementById("utility").style.display = "none";
 }
 
 function showTaken() {
     document.getElementById("taken").style.display = "block";
     document.getElementById("dmg").style.display = "none";
+    document.getElementById("utility").style.display = "none";
+}
+
+function showUtility() {
+    document.getElementById("taken").style.display = "none";
+    document.getElementById("dmg").style.display = "none";
+    document.getElementById("utility").style.display = "block";
 }
 var hitboxs = ["Chest", "Head", "Stomach", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Generic"];
 

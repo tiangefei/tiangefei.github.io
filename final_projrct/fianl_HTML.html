@@ -51,15 +51,18 @@
             <svg id="charts-line" width="800" height="400" xmlns:html="http://www.w3.org/1999/xhtml">
                 <rect x="0" y="0" width="150" height="350" stroke="white" stroke-width="3"></rect>
                 <rect x="175" y="0" width="625" height="350" stroke="white" stroke-width="3"></rect>
-                <text id="text" x="10" y="75" fill="white" onclick=showDmg()>Total damage to</text>
-                <text id="text" x="50" y="90" fill="white" onclick=showDmg()>enemy</text>
-                <text id="text" x="10" y="175" fill="gold" onclick=showTaken()>Damage taken</text>
-                <text id="text" x="10" y="275" fill="white">Utilities used</text>
+                <text id="clicktext" x="10" y="75" fill="white" onclick=showDmg() cursor: pointer>Total damage to</text>
+                <text id="clicktext" x="50" y="98" fill="white" onclick=showDmg() cursor: pointer>enemy</text>
+                <text id="clicktext" x="15" y="175" fill="gold" onclick=showTaken() cursor: pointer>Damage taken</text>
+                <text id="clicktext" x="15" y="275" fill="green" onclick=showUtility() cursor: pointer>Utilities used</text>
 
                 <g id = dmg>
                 </g>
 
                 <g id = taken>
+                </g>
+
+                <g id = utility>
                 </g>
             </svg>
         </div>
@@ -116,9 +119,14 @@
                 </svg>
         </div>
 
-        <div id="pie-chart">
-            <svg id="pie" width="960" height="500">
+        <div id="title">
+            <br>
+            <h2>Pie chart</h2>
+        </div>
 
+        <div id="pie-chart">
+            <svg id="pie" width="800" height="800">
+                    <rect width="800" height="800" stroke="white" stroke-width="3"></rect>
             </svg>
         </div>
 

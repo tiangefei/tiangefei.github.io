@@ -1,0 +1,317 @@
+file,round,seconds,att_team,vic_team,att_id,vic_id,att_side,vic_side,hp_dmg,arm_dmg,is_bomb_planted,bomb_site,hitbox,nade,att_rank,vic_rank,att_pos_x,att_pos_y,nade_land_x,nade_land_y,vic_pos_x,vic_pos_y
+esea_match_13770997.dem,1,153.1602,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,TRUE,B,,Smoke,0,,-1618.146,-66.00259,-949.8569,-340.3019,,
+esea_match_13770997.dem,2,184.7945,Hentai Hooligans,Animal Style,76561198037331400,76561198169360500,Terrorist,CounterTerrorist,70,0,FALSE,,Generic,HE,0,0,-1719.904,-2357.647,-2774.665,-1603.943,-2741.25,-1523.163
+esea_match_13770997.dem,2,186.8617,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-1036.352,492.1676,-466.8676,-356.9641,,
+esea_match_13770997.dem,2,187.1122,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-855.077,438.6909,-459.0147,-543.8581,,
+esea_match_13770997.dem,2,191.0587,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2617.49,-1832.407,-2743.561,-927.2995,,
+esea_match_13770997.dem,2,191.4502,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-854.7708,427.4865,-490.5282,-652.8984,,
+esea_match_13770997.dem,2,191.6225,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1948.91,-1184.198,-1780.658,-976.403,,
+esea_match_13770997.dem,2,204.7617,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,HE,0,,-1182.091,-931.6979,-1726.528,-428.8477,,
+esea_match_13770997.dem,2,225.5276,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-1436.789,-720.2195,-1122.898,-510.9258,,
+esea_match_13770997.dem,3,304.3628,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,HE,0,,-1734.938,-2341.185,-2860.174,-1505.672,,
+esea_match_13770997.dem,3,306.8371,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2115.314,-1922.654,-2684.468,-1329.793,,
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198133908300,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1872.836,-2442.808
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1713.419,-2356.086
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1748.881,-2336.291
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198037331400,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1677.455,-2380.632
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1773.385,-2305.948
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198037331400,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1674.068,-2380.285
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1788.361,-2264.084
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1802.62,-2235.253
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,5,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1810.776,-2228.353
+esea_match_13770997.dem,4,363.9355,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,6,0,FALSE,,Generic,Incendiary,0,0,-2339.552,-358.022,-1823.104,-2271.759,-1815.866,-2217.656
+esea_match_13770997.dem,4,365.3136,Hentai Hooligans,Animal Style,76561198133908300,76561198165334100,Terrorist,CounterTerrorist,1,0,FALSE,,Generic,Flash,0,0,-1599.425,-2401.576,-2634.119,-1692.584,-2649.508,-1708.464
+esea_match_13770997.dem,4,365.3136,Hentai Hooligans,Animal Style,76561198133908300,76561198165334100,Terrorist,CounterTerrorist,1,0,FALSE,,Generic,Flash,0,0,-1599.425,-2401.576,-2634.119,-1692.584,-2649.508,-1708.464
+esea_match_13770997.dem,4,365.8461,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1618.814,-2410.17,-2586.813,-1741.313,,
+esea_match_13770997.dem,4,367.9289,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Smoke,0,,-1506.864,-2407.214,-1801.802,-2319.955,,
+esea_match_13770997.dem,4,371.7971,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1409.792,235.1056,-374.0323,314.5005,,
+esea_match_13770997.dem,4,381.5066,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2352,-741.3835,-1977.979,916.6158,,
+esea_match_13770997.dem,4,385.2651,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2404.244,-74.18757,-2497.002,1362.027,,
+esea_match_13770997.dem,4,388.4129,Hentai Hooligans,,76561198082200400,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2469.121,1187.036,-2460.482,1305.418,,
+esea_match_13770997.dem,4,391.3101,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2667.141,-28.23439,-2503.313,594.2029,,
+esea_match_13770997.dem,4,402.8519,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,TRUE,A,,Molotov,0,,-2390.81,841.9387,-2603.027,15.05872,,
+esea_match_13770997.dem,4,419.3268,Hentai Hooligans,,76561198082200400,,Terrorist,,0,0,TRUE,A,,Flash,0,,-2458.725,857.0313,-2483.211,808.1121,,
+esea_match_13770997.dem,5,459.5745,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1620.278,-2397.915,-2868.883,-1521.973,,
+esea_match_13770997.dem,5,462.9571,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1960.072,-1259.172,-1774.964,-938.0816,,
+esea_match_13770997.dem,5,463.1451,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1992.182,-2068.848,-3529.488,-2312.717,,
+esea_match_13770997.dem,5,469.2057,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2925.191,-1212.724,-2852.148,-1047.766,,
+esea_match_13770997.dem,6,506.9946,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-690.0586,-1739.656,-500.4047,-324.5485,,
+esea_match_13770997.dem,6,507.4957,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-1590.952,-2403.041,-2354.361,-1873.977,,
+esea_match_13770997.dem,6,510.5808,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-990.8261,439.7095,-497.1996,-297.3314,,
+esea_match_13770997.dem,6,510.8314,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Molotov,0,,-457.3588,-1483.566,-822.1622,509.8043,,
+esea_match_13770997.dem,6,510.8627,Animal Style,Hentai Hooligans,76561198055191000,76561198798659600,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,HE,0,0,-1048.454,487.4453,-522.1066,-433.7913,-472.8745,-730.9083
+esea_match_13770997.dem,6,517.769,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1053.332,468.0619,-526.4927,-462.5148,,
+esea_match_13770997.dem,6,520.9951,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-481.3047,-1304.184,-602.2408,-25.52269,,
+esea_match_13770997.dem,6,524.2682,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1489.525,102.2183,-484.6432,-149.0559,,
+esea_match_13770997.dem,6,527.8388,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Smoke,0,,-1559.997,-728.7825,-1711.38,500.2318,,
+esea_match_13770997.dem,6,529.3265,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-3612.83,-263.1403,-2579.829,843.4507,,
+esea_match_13770997.dem,6,529.5301,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Molotov,0,,-1559.997,-728.7825,-887.1882,483.4122,,
+esea_match_13770997.dem,6,529.8277,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-856.0313,-558.6504,-1436.708,45.54369,,
+esea_match_13770997.dem,6,531.5973,Animal Style,,76561198048742900,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1947.007,69.26289,-1157.418,-424.3842,,
+esea_match_13770997.dem,6,532.5526,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-3119.741,198.6583,-3024.593,843.2546,,
+esea_match_13770997.dem,6,534.1656,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Smoke,0,,-856.022,-536.5036,-1046.461,-518.1385,,
+esea_match_13770997.dem,6,541.6357,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Smoke,0,,-730.5624,16.07966,-1516.982,-156.7395,,
+esea_match_13770997.dem,6,542.3718,Animal Style,,76561198048742900,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1969.79,-618.3832,-1124.889,-94.61459,,
+esea_match_13770997.dem,6,547.0386,Animal Style,,76561198048742900,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1826.281,-310.5872,-1334.112,-208.9846,,
+esea_match_13770997.dem,6,568.0081,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Molotov,0,,-846.3048,489.2721,-501.9949,-388.4113,,
+esea_match_13770997.dem,6,597.121,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,TRUE,B,,Smoke,0,,-993.7877,233.5667,-1151.994,-134.7378,,
+esea_match_13770997.dem,7,628.2229,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-1620.613,-2408.169,-2713.021,-1759.994,,
+esea_match_13770997.dem,7,629.0999,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-1739.243,-2361.301,-2831.55,-1526.622,,
+esea_match_13770997.dem,7,629.1625,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,HE,0,,-1634.309,-2386.465,-2887.502,-1500.211,,
+esea_match_13770997.dem,7,630.2744,Hentai Hooligans,,76561198082200400,,Terrorist,,0,0,FALSE,,,Flash,0,,-601.9365,-980.769,-1665.421,-881.7766,,
+esea_match_13770997.dem,7,634.3618,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Flash,0,,-270.8221,-957.6053,-628.8927,-190.1466,,
+esea_match_13770997.dem,7,635.1605,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2463.791,-2714.106,-3638.302,-2066.742,,
+esea_match_13770997.dem,7,637.1181,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1829.081,-36.68239,-651.0312,-66.34241,,
+esea_match_13770997.dem,7,640.5477,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Molotov,0,,-3874.643,-1787.816,-3466.177,-787.8619,,
+esea_match_13770997.dem,7,641.7223,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1887.003,7.902422,-955.2808,-404.9051,,
+esea_match_13770997.dem,7,644.6508,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Molotov,0,,-3925.548,-1278.161,-3260.096,-819.946,,
+esea_match_13770997.dem,7,661.2354,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-3532.28,-250.4955,-2310.508,699.1376,,
+esea_match_13770997.dem,8,704.3018,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Smoke,0,,-675.0035,-2718.816,-1173.698,-440.5421,,
+esea_match_13770997.dem,8,708.3892,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-1594.305,-2416.054,-2711.517,-1700.497,,
+esea_match_13770997.dem,8,709.3602,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-661.5562,-1642.708,-478.8132,-245.9538,,
+esea_match_13770997.dem,8,709.6577,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Molotov,0,,-1762.064,-1746.824,-1869.467,-1012.982,,
+esea_match_13770997.dem,8,710.0179,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-594.5242,-1200.2,-488.5425,-52.14771,,
+esea_match_13770997.dem,8,710.519,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1950.302,-1220.968,-1795.67,-973.7217,,
+esea_match_13770997.dem,8,712.6176,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Molotov,0,,-466.2613,-1490.221,-728.6205,300.6197,,
+esea_match_13770997.dem,8,723.7053,Hentai Hooligans,Animal Style,76561198037331400,76561198055191000,Terrorist,CounterTerrorist,3,1,FALSE,,Generic,HE,0,0,-707.8204,213.5452,-1192.205,-554.8775,-963.5029,-639.9897
+esea_match_13770997.dem,9,786.1909,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2232.155,-756.4491,-2744.613,-1696.816,,
+esea_match_13770997.dem,9,786.6763,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1949.694,93.30807,-1210.724,-969.6435,,
+esea_match_13770997.dem,9,787.3497,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1626.163,-2397.383,-2882.458,-1530.532,,
+esea_match_13770997.dem,9,788.1484,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2263.28,-722.6544,-2396.181,-1800.249,,
+esea_match_13770997.dem,9,788.3207,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Flash,0,,-1639.158,-2408.19,-2872.828,-1526.763,,
+esea_match_13770997.dem,9,791.2179,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2302.606,-2695.667,-3020.972,-1964.61,,
+esea_match_13770997.dem,9,791.4684,Hentai Hooligans,,76561198082200400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1832.666,-1671.334,-1812.425,-905.7771,,
+esea_match_13770997.dem,9,794.0054,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2446.11,-2627.023,-3160.726,-1822.739,,
+esea_match_13770997.dem,9,794.6632,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2235.612,-470.9469,-2424.297,-1276.686,,
+esea_match_13770997.dem,9,805.1558,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-3046.525,569.8429,-2756.899,646.7079,,
+esea_match_13770997.dem,9,807.0663,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2991.657,594.1436,-2697.852,167.7059,,
+esea_match_13770997.dem,9,810.1045,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1773.362,1305.242,-2452.24,638.3758,,
+esea_match_13770997.dem,9,811.5296,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-1793.86,1307.591,-2553.555,224.374,,
+esea_match_13770997.dem,9,815.5857,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2531.014,-1459.007,-2000.081,970.4763,,
+esea_match_13770997.dem,9,816.1338,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2083.808,809.7184,-972.2504,-498.599,,
+esea_match_13770997.dem,9,821.0042,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2003.24,812.7106,-2678.017,174.1318,,
+esea_match_13770997.dem,9,823.369,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2032.829,778.285,-2669.187,143.47,,
+esea_match_13770997.dem,9,823.7292,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2351.82,-751.4162,-2003.957,914.8439,,
+esea_match_13770997.dem,9,828.0201,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Incendiary,0,,-2406.529,-64.20145,-2486.418,1316.773,,
+esea_match_13770997.dem,9,828.3334,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-3749.645,-810.9999,-2926.693,617.7802,,
+esea_match_13770997.dem,9,830.5102,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-3095.792,233.8101,-2977.171,777.7081,,
+esea_match_13770997.dem,9,832.9063,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2078.449,1151.84,-1817.964,883.1976,,
+esea_match_13770997.dem,10,867.3908,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2611.942,-931.2603,-2731.799,-1684.512,,
+esea_match_13770997.dem,10,867.8763,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1945.123,78.45226,-1209.191,-976.999,,
+esea_match_13770997.dem,10,871.071,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-609.4211,-1097.608,-317.1252,15.44528,,
+esea_match_13770997.dem,10,871.901,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1426.573,237.3462,-384.8782,322.2775,,
+esea_match_13770997.dem,10,873.0599,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-613.4427,-1091.379,-326.327,-20.01753,,
+esea_match_13770997.dem,10,873.2948,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2627.061,-935.2006,-2670.789,-1979.181,,
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-529.3892,-471.433
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561197961009200,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-561.4,-458.8951
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198798659600,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-555.7029,-330.7669
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-529.3984,-429.8368
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561197961009200,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-561.4,-458.4597
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-529.7374,-397.6918
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561197961009200,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-561.424,-449.1683
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-527.5316,-413.0911
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561197961009200,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-561.4261,-412.3154
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-516.9855,-426.0389
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561197961009200,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-561.4261,-370.8365
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,5,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-509.4696,-415.1625
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,6,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-514.4731,-380.52
+esea_match_13770997.dem,10,873.4514,Animal Style,Hentai Hooligans,76561198048742900,76561198082200400,CounterTerrorist,Terrorist,7,0,FALSE,,Generic,Incendiary,0,0,-743.3719,217.1906,-496.4426,-381.3924,-525.9642,-335.8106
+esea_match_13770997.dem,10,873.9839,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-329.5188,-903.0756,-391.2287,-748.8812,,
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198798659600,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-566.698,-15.65074
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-587.9688,-232.3098
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-524.2753,-293.2602
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-587.9688,-214.6086
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198798659600,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-577.9534,31.74666
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-507.7314,-248.1276
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-583.2123,-212.1305
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-572.6248,-182.1095
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-479.852,-210.3831
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-553.2482,-147.922
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-447.1987,-179.8162
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,5,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-523.6953,-110.2036
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,6,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-508.9064,-66.88618
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,7,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-502.5841,-20.64912
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-511.0962,26.89426
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-660.366,73.79306
+esea_match_13770997.dem,10,874.0778,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1536.189,103.434,-655.2633,-129.2119,-696.5262,73.47245
+esea_match_13770997.dem,10,876.4583,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,HE,0,0,-1109.397,356.2152,-389.3373,-247.1885,-368.9763,69.27405
+esea_match_13770997.dem,10,878.9326,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-350.4554,-767.6568,-1203.121,-1059.023,,
+esea_match_13770997.dem,10,888.3916,Animal Style,Hentai Hooligans,76561198169360500,76561198037331400,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,Incendiary,0,0,-2059.991,799.6692,-977.2193,-235.9754,-963.2825,-350.5101
+esea_match_13770997.dem,10,902.7836,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1942.88,-482.6361,-1099.138,-207.7344,,
+esea_match_13770997.dem,11,960.3361,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2443.116,-645.5025,-2706.078,-1655.283,,
+esea_match_13770997.dem,11,960.759,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1941.304,39.11512,-1195.895,-1011.296,,
+esea_match_13770997.dem,11,961.2758,Animal Style,,76561198048742900,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2021.266,-1299.504,-1672.005,-1154.001,,
+esea_match_13770997.dem,11,961.6046,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1628.826,-2400.245,-2833.319,-1590.542,,
+esea_match_13770997.dem,11,962.1528,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2654.908,-926.4517,-2144.87,-2125.476,,
+esea_match_13770997.dem,11,963.4213,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-919.0159,338.6561,-562.3218,-534.7779,,
+esea_match_13770997.dem,11,966.3655,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,HE,0,,-1645.47,-2374.81,-2862.047,-1580.569,,
+esea_match_13770997.dem,11,970.813,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1535.3,-20.52236,-941.5908,-455.7689,,
+esea_match_13770997.dem,11,978.1891,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2237.888,-2011.309,-2267.187,-631.5963,,
+esea_match_13770997.dem,11,987.8831,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-2295.814,-784.9188,-2070.529,718.8331,,
+esea_match_13770997.dem,11,989.3395,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2221.779,-88.07623,-2386.328,449.9352,,
+esea_match_13770997.dem,12,1052.311,Animal Style,,76561198048742900,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-2337.313,-366.7906,-1816.369,-2295.32,,
+esea_match_13770997.dem,12,1053.955,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1966.141,129.0941,-1235.301,-947.9207,,
+esea_match_13770997.dem,12,1054.942,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-756.9418,-1799.023,-1757.369,-1768.144,,
+esea_match_13770997.dem,12,1056.006,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-998.5672,413.7511,-489.0492,-317.5656,,
+esea_match_13770997.dem,12,1056.523,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-570.5191,-953.4717,-496.0815,-260.6854,,
+esea_match_13770997.dem,12,1057.62,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Smoke,0,,-597.3065,-1259.525,-477.5137,-332.0742,,
+esea_match_13770997.dem,12,1057.901,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Smoke,0,,-531.0427,-730.2858,-467.1494,-489.4953,,
+esea_match_13770997.dem,12,1058.747,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-554.1676,-449.1657,-530.2667,-40.2104,,
+esea_match_13770997.dem,12,1059.295,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-325.9579,-777.5131,-1374.967,-681.3452,,
+esea_match_13770997.dem,12,1061.456,Animal Style,Hentai Hooligans,76561198055191000,76561198082200400,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,HE,0,0,-1424.237,284.0054,-418.8895,173.2622,-627.2561,-22.64948
+esea_match_13770997.dem,12,1061.456,Animal Style,Hentai Hooligans,76561198055191000,76561197961009200,CounterTerrorist,Terrorist,1,0,FALSE,,Generic,HE,0,0,-1424.237,284.0054,-418.8895,173.2622,-338.2942,-132.3711
+esea_match_13770997.dem,12,1061.456,Animal Style,Hentai Hooligans,76561198055191000,76561198798659600,CounterTerrorist,Terrorist,21,7,FALSE,,Generic,HE,0,0,-1424.237,284.0054,-418.8895,173.2622,-445.4457,319.1314
+esea_match_13770997.dem,12,1062.756,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1443.934,229.8551,-481.9818,292.5328,,
+esea_match_13770997.dem,12,1064.338,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2662.398,-1758.509,-2688.208,-1665.152,,
+esea_match_13770997.dem,13,1111.695,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2248.079,-732.6266,-2718.455,-1651.602,,
+esea_match_13770997.dem,13,1112.431,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1961.177,130.4938,-1233.988,-936.4406,,
+esea_match_13770997.dem,13,1113.105,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-3701.709,-581.8711,-3382.129,-2136.283,,
+esea_match_13770997.dem,13,1114.342,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2481.543,-1092.765,-2493.966,-1327.204,,
+esea_match_13770997.dem,13,1138.647,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2351.969,-734.1578,-1958.832,910.991,,
+esea_match_13770997.dem,13,1140.26,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-2280.743,-649.6199,-2125.522,427.5461,,
+esea_match_13770997.dem,13,1144.207,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2634.619,-176.7199,-2412.717,1345.99,,
+esea_match_13770997.dem,13,1147.981,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-2472.863,14.1457,-2743.92,816.7491,,
+esea_match_13770997.dem,13,1148.67,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2352.896,102.1,-3041.745,833.3187,,
+esea_match_13770997.dem,13,1150.236,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1754.446,1297.196,-2569.166,574.902,,
+esea_match_13770997.dem,13,1152.695,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2185.597,1180.737,-2110.536,1091.759,,
+esea_match_13770997.dem,13,1157.299,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1877.241,1303.992,-2504.033,489.0357,,
+esea_match_13770997.dem,13,1161.136,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2070.405,1269.775,-2439.274,651.8427,,
+esea_match_13770997.dem,14,1193.851,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2225.779,-752.2837,-2724.808,-1646.734,,
+esea_match_13770997.dem,14,1194.665,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1962.246,90.29156,-1205.534,-1003.005,,
+esea_match_13770997.dem,14,1195.526,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2406.698,-1004.209,-2417.269,-1739.951,,
+esea_match_13770997.dem,14,1197.077,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Flash,0,,-1620.515,-2412.032,-2467.178,-1785.96,,
+esea_match_13770997.dem,14,1197.249,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1735.51,-1848.721,-1815.379,-985.8125,,
+esea_match_13770997.dem,14,1198.048,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1053.952,427.9973,-488.1111,-288.3345,,
+esea_match_13770997.dem,14,1200.365,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-900.2678,-373.7856,-1358.41,-616.8386,,
+esea_match_13770997.dem,14,1204.97,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-2176.922,-766.7672,-3050.315,-1849.735,,
+esea_match_13770997.dem,14,1216.527,Hentai Hooligans,,76561198133908300,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2376.173,527.3377,-1938.547,962.7039,,
+esea_match_13770997.dem,15,1260.784,Animal Style,,76561198169360500,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2624.663,-968.8466,-2359.59,-1944.575,,
+esea_match_13770997.dem,15,1261.395,Animal Style,,76561198055054700,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1933.109,87.76286,-1199.217,-980.5272,,
+esea_match_13770997.dem,15,1262.177,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-1710.135,-2354.81,-2841.168,-1511.042,,
+esea_match_13770997.dem,15,1263.258,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1137.266,279.8083,-443.4547,142.4416,,
+esea_match_13770997.dem,15,1266.782,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1960.043,-1235.879,-1777.039,-952.3051,,
+esea_match_13770997.dem,15,1267.377,Hentai Hooligans,,76561198037331400,,Terrorist,,0,0,FALSE,,,Flash,0,,-2397.21,-1728.215,-2661.256,-1437.286,,
+esea_match_13770997.dem,15,1269.084,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1922.986,-1225.452,-1808.265,-969.572,,
+esea_match_13770997.dem,15,1271.104,Hentai Hooligans,Animal Style,76561198037331400,76561198169360500,Terrorist,CounterTerrorist,1,0,FALSE,,Generic,Molotov,0,0,-2609.064,-1711.498,-2765.292,-923.8588,-2760.97,-910.8252
+esea_match_13770997.dem,15,1271.104,Hentai Hooligans,Animal Style,76561198037331400,76561198169360500,Terrorist,CounterTerrorist,1,0,FALSE,,Generic,Molotov,0,0,-2609.064,-1711.498,-2765.292,-923.8588,-2760.97,-910.8252
+esea_match_13770997.dem,15,1273.516,Animal Style,,76561198055191000,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-682.9131,-17.11294,-551.0938,-516.8672,,
+esea_match_13770997.dem,15,1273.547,Animal Style,,76561198165334100,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1883.765,-1124.741,-1732.762,-1261.546,,
+esea_match_13770997.dem,15,1284.948,Hentai Hooligans,,76561198798659600,,Terrorist,,0,0,FALSE,,,Flash,0,,-490.997,-742.8792,-534.4766,-138.3939,,
+esea_match_13770997.dem,15,1290.085,Hentai Hooligans,,76561197961009200,,Terrorist,,0,0,FALSE,,,Flash,0,,-1472.53,-780.3878,-262.1395,-131.5784,,
+esea_match_13770997.dem,17,1403.169,Animal Style,,76561198169360500,,Terrorist,,0,0,FALSE,,,HE,0,,-1629.83,-2389.811,-2883.406,-1571.265,,
+esea_match_13770997.dem,17,1403.185,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,HE,0,,-1694.655,-2374.318,-2841.38,-1468.182,,
+esea_match_13770997.dem,17,1404,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2268.791,-559.2402,-2292.508,-1790.031,,
+esea_match_13770997.dem,17,1404.391,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1301.893,-197.5632,-989.1107,-380.4971,,
+esea_match_13770997.dem,17,1404.673,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,HE,0,,-1740.163,-2401.777,-2881.893,-1504.176,,
+esea_match_13770997.dem,17,1409.7,Hentai Hooligans,,76561198082200400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1837.331,-913.4399,-1751.016,-1646.324,,
+esea_match_13770997.dem,17,1418.251,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2148.746,821.3345,-2654.948,-179.5782,,
+esea_match_13770997.dem,17,1419.597,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-2350.162,573.9043,-2232.125,-75.56892,,
+esea_match_13770997.dem,17,1449.462,Hentai Hooligans,Animal Style,76561198133908300,76561198055191000,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,HE,0,0,-2180.024,-587.6694,-2594.686,-916.0515,-2880.525,-928.2012
+esea_match_13770997.dem,17,1495.05,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Flash,0,,-502.7572,-1008.729,-348.0651,-358.9028,,
+esea_match_13770997.dem,18,1528.501,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2192,744,-2762.253,373.8794,,
+esea_match_13770997.dem,18,1530.897,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2160.764,777.6797,-1876.754,1296.31,,
+esea_match_13770997.dem,18,1535.047,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2446.864,-641.8904,-2730.272,-1634.19,,
+esea_match_13770997.dem,18,1536.895,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2675.803,-1018.244,-2104.686,-1800.561,,
+esea_match_13770997.dem,18,1539.964,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-999.9111,393.6095,-504.0391,-263.888,,
+esea_match_13770997.dem,18,1541.17,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-998.1094,-187.506,-1079.429,-631.7866,,
+esea_match_13770997.dem,19,1587.322,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2447.445,-638.0375,-2732.123,-1627.363,,
+esea_match_13770997.dem,19,1589.342,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1996.731,183.5125,-1199.625,-959.1474,,
+esea_match_13770997.dem,19,1590.266,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,HE,0,,-1651.286,-2397.998,-2880.105,-1511.465,,
+esea_match_13770997.dem,19,1592.286,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-992.7347,347.7309,-518.4109,-237.9854,,
+esea_match_13770997.dem,19,1593.617,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1111.542,-238.5301,-1360.19,-729.0822,,
+esea_match_13770997.dem,19,1594.322,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-784.3201,495.9688,-585.0647,296.3453,,
+esea_match_13770997.dem,19,1594.667,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-2464.784,-2298.279,-2916.968,-2510.803,,
+esea_match_13770997.dem,19,1596.765,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1917.648,-1229.912,-1758.279,-1193.175,,
+esea_match_13770997.dem,19,1597.345,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1366.976,-762.0892,-1131.379,-981.5101,,
+esea_match_13770997.dem,19,1597.893,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-717.7551,200.842,-510.4229,-392.4748,,
+esea_match_13770997.dem,19,1613.6,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-1274.55,-1016.252,-568.1576,-893.1633,,
+esea_match_13770997.dem,19,1646.08,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2351.969,-790.0313,-2060.133,560.9324,,
+esea_match_13770997.dem,19,1648.821,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Flash,0,,-2311.76,-896.8958,-2388.136,-16.81693,,
+esea_match_13770997.dem,19,1657.935,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Smoke,0,,-1559.993,-728.7972,-1711.867,492.2805,,
+esea_match_13770997.dem,20,1692.655,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2446.429,-632.9982,-2727.294,-1623.108,,
+esea_match_13770997.dem,20,1695.787,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-2227.317,-643.42,-2762.734,-1914.89,,
+esea_match_13770997.dem,20,1695.896,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-971.3199,338.4452,-500.2621,-270.8859,,
+esea_match_13770997.dem,20,1696.429,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1105.471,283.882,-987.0613,-352.7036,,
+esea_match_13770997.dem,20,1698.12,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-867.6482,456.9004,-488.8949,-394.3997,,
+esea_match_13770997.dem,20,1699.53,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-2207.094,-707.3522,-2980.663,-1837.289,,
+esea_match_13770997.dem,20,1701.299,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-306.3901,-15.07559,-652.7415,-928.0036,,
+esea_match_13770997.dem,20,1703.46,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-951.1566,-166.1875,-1302.829,-527.8796,,
+esea_match_13770997.dem,20,1706.937,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-175.3227,260.0643,-521.5184,-610.199,,
+esea_match_13770997.dem,20,1731.884,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1209.895,-225.7925,-2118.352,-56.97455,,
+esea_match_13770997.dem,21,1807.18,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Molotov,0,,-468.2941,-2128.983,-1034.914,-375.689,,
+esea_match_13770997.dem,21,1807.681,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2462.64,-690.7028,-2712.846,-1626.609,,
+esea_match_13770997.dem,21,1808.731,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Flash,0,,-632.9752,-1885.397,-1655.574,-900.8212,,
+esea_match_13770997.dem,21,1809.686,Animal Style,,76561198169360500,,Terrorist,,0,0,FALSE,,,Flash,0,,-1587.499,-2408.024,-1879.453,-2303.006,,
+esea_match_13770997.dem,21,1811.252,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1015.775,273.5768,-515.2504,-175.1945,,
+esea_match_13770997.dem,21,1811.644,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-581.964,-1105.051,-1292.461,-238.2479,,
+esea_match_13770997.dem,21,1811.831,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1559.016,58.72157,-851.8538,-396.8984,,
+esea_match_13770997.dem,21,1812.035,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Flash,0,,-490.0717,-1998.313,-1443.162,-996.797,,
+esea_match_13770997.dem,21,1812.411,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-960.6088,329.9096,-508.5111,-271.69,,
+esea_match_13770997.dem,21,1812.442,Animal Style,,76561198169360500,,Terrorist,,0,0,FALSE,,,Flash,0,,-1664.018,-2370.835,-2675.158,-1694.661,,
+esea_match_13770997.dem,21,1813.053,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-821.5737,-941.2805,-1292.461,-238.2479,,
+esea_match_13770997.dem,21,1814.055,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Flash,0,,-616.2349,-1832.347,-1416.169,-1125.489,,
+esea_match_13770997.dem,21,1816.467,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-282.2203,-30.0054,-490.1197,-388.6318,,
+esea_match_13770997.dem,21,1819.114,Hentai Hooligans,,76561198082200400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1982.092,-1132.63,-1687.299,-1164.26,,
+esea_match_13770997.dem,21,1820.868,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-755.5517,-42.99033,-1349.293,-632.4619,,
+esea_match_13770997.dem,21,1823.53,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1024.18,34.91738,-1560.969,-757.9207,,
+esea_match_13770997.dem,22,1866.393,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2513.814,-806.8653,-2713.016,-1610.069,,
+esea_match_13770997.dem,22,1870.778,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-985.6546,342.0082,-498.0303,-254.6804,,
+esea_match_13770997.dem,22,1871.248,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1245.625,-235.1802,-1205.329,-469.0429,,
+esea_match_13770997.dem,22,1872.814,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-784.0035,495.9688,-542.567,81.38335,,
+esea_match_13770997.dem,22,1874.771,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-887.9233,427.4899,-457.7122,-434.7297,,
+esea_match_13770997.dem,22,1878.264,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1197.056,381.1174,-986.4183,-553.3963,,
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,2,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1808.607,-1143.38
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,3,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1799.096,-1100.784
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1783.9,-1063.735
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,4,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1766.753,-1047.932
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,5,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1755.641,-1038.97
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,6,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1746.011,-1029.234
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,7,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1737.399,-1016.48
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1731.788,-1002.749
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1734.225,-989.2665
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1751.35,-964.3337
+esea_match_13770997.dem,22,1882.774,Hentai Hooligans,Animal Style,76561198082200400,76561198165334100,CounterTerrorist,Terrorist,8,0,FALSE,,Generic,Incendiary,0,0,-1985.025,-1305.355,-1732.865,-1142.433,-1777.228,-937.7421
+esea_match_13770997.dem,22,1914.173,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2156.643,1207.067,-2799.443,13.61361,,
+esea_match_13770997.dem,22,1931.964,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-1839.988,-1071.989,-1571.808,-1056.024,,
+esea_match_13770997.dem,22,1939.95,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-2286.096,-762.0011,-2110.238,403.045,,
+esea_match_13770997.dem,22,1940.702,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Smoke,0,,-2351.969,-735.8975,-1944.398,1015.111,,
+esea_match_13770997.dem,22,1944.445,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Molotov,0,,-2308.764,-66.07387,-1941.586,656.6017,,
+esea_match_13770997.dem,22,1957.568,Animal Style,,76561198165334100,,Terrorist,,0,0,TRUE,A,,Smoke,0,,-2396.382,-1065.273,-2274.661,-1340.182,,
+esea_match_13770997.dem,22,1958.524,Animal Style,,76561198055191000,,Terrorist,,0,0,TRUE,A,,Smoke,0,,-2149,888.342,-1970.034,977.1821,,
+esea_match_13770997.dem,23,2023.468,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2383.947,-985.2876,-2667.318,-1684.332,,
+esea_match_13770997.dem,23,2024.22,Animal Style,,76561198169360500,,Terrorist,,0,0,FALSE,,,Flash,0,,-1599.473,-2399.782,-2834.653,-1617.646,,
+esea_match_13770997.dem,23,2025.567,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Molotov,0,,-559.4206,-1163.126,-498.9501,-277.0111,,
+esea_match_13770997.dem,23,2025.755,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-980.465,354.7141,-878.0137,464.282,,
+esea_match_13770997.dem,23,2026.397,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1041.16,213.06,-1401.937,-989.51,,
+esea_match_13770997.dem,23,2026.945,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1033.776,-287.5467,-1314.103,-713.9999,,
+esea_match_13770997.dem,23,2027.743,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Smoke,0,,-436.0106,-1001.036,-519.8176,-289.9679,,
+esea_match_13770997.dem,23,2028.276,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-784.0065,495.9954,-552.8907,82.07658,,
+esea_match_13770997.dem,23,2029.513,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-954.093,356.6486,-874.0595,405.815,,
+esea_match_13770997.dem,23,2029.889,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Flash,0,,-465.8579,-1116.895,-829.8685,-934.2625,,
+esea_match_13770997.dem,23,2030.86,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-940.6689,-181.8229,-940.2391,-281.4206,,
+esea_match_13770997.dem,23,2074.631,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-1166.489,-123.9688,-530.8296,-923.7593,,
+esea_match_13770997.dem,23,2074.725,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,HE,0,,-3713.961,-268.0404,-2554.957,777.1907,,
+esea_match_13770997.dem,23,2082.681,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Smoke,0,,-3286.053,-272.7405,-1997.509,939.683,,
+esea_match_13770997.dem,23,2085.03,Animal Style,,76561198055191000,,Terrorist,,0,0,FALSE,,,Flash,0,,-3269.823,4.411008,-3052.378,1088.578,,
+esea_match_13770997.dem,23,2090.182,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-2174.189,828.4567,-3018.626,364.2072,,
+esea_match_13770997.dem,24,2121.863,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2483.935,-724.8276,-2717.259,-1613.997,,
+esea_match_13770997.dem,24,2121.863,Animal Style,,76561198048742900,,Terrorist,,0,0,FALSE,,,Molotov,0,,-465.1222,-2146.551,-1043.963,-374.6174,,
+esea_match_13770997.dem,24,2127.094,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-965.7457,321.682,-491.7634,-293.2126,,
+esea_match_13770997.dem,24,2127.344,Hentai Hooligans,,76561198082200400,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1935.752,-1302.987,-1762.372,-1128.761,,
+esea_match_13770997.dem,24,2127.861,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-681.6829,23.94183,-457.9658,-406.1677,,
+esea_match_13770997.dem,24,2129.052,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Smoke,0,,-1790.576,-1544.26,-1838.559,-1041.695,,
+esea_match_13770997.dem,24,2130.116,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1439.827,-178.0315,-930.7728,-417.1237,,
+esea_match_13770997.dem,24,2133.155,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1528.671,-85.92427,-930.7728,-417.1237,,
+esea_match_13770997.dem,24,2134.157,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1240.621,149.9694,-853.2321,-658.3371,,
+esea_match_13770997.dem,24,2136.271,Animal Style,,76561198055054700,,Terrorist,,0,0,FALSE,,,Molotov,0,,-1559.969,-728.7726,-1206.14,456.7458,,
+esea_match_13770997.dem,24,2138.745,Hentai Hooligans,,76561198133908300,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-1486.488,-91.37918,-1009.376,-536.1234,,
+esea_match_13770997.dem,24,2139.669,Hentai Hooligans,,76561198798659600,,CounterTerrorist,,0,0,FALSE,,,Flash,0,,-785.2322,455.1332,-959.0946,-558.6968,,
+esea_match_13770997.dem,24,2141,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,HE,0,,-1929.097,-1156.442,-1489.154,-623.038,,
+esea_match_13770997.dem,24,2142.708,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1927.228,-1152.034,-1391.849,-516.3024,,
+esea_match_13770997.dem,25,2181.013,Hentai Hooligans,,76561198037331400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-2538.637,-907.0115,-2673.477,-1642.303,,
+esea_match_13770997.dem,25,2181.718,Animal Style,Hentai Hooligans,76561198169360500,76561198037331400,Terrorist,CounterTerrorist,4,1,FALSE,,Generic,HE,0,0,-1667.632,-2390.626,-2882.646,-1523.789,-2882.612,-1279.952
+esea_match_13770997.dem,25,2184.114,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Incendiary,0,,-1020.448,372.3243,-519.8735,-242.8643,,
+esea_match_13770997.dem,25,2185.257,Hentai Hooligans,,76561198082200400,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-1930.985,-906.1036,-1745.191,-1383.91,,
+esea_match_13770997.dem,25,2188.389,Hentai Hooligans,,76561197961009200,,CounterTerrorist,,0,0,FALSE,,,Smoke,0,,-329.0402,58.99157,-571.319,-404.8038,,
+esea_match_13770997.dem,25,2191.349,Animal Style,,76561198165334100,,Terrorist,,0,0,FALSE,,,Flash,0,,-1843.125,-1757.349,-1755.834,-1195.39,,
+esea_match_13770997.dem,25,2193.745,Animal Style,,76561198165334100,,Terrorist,,0,0,FALSE,,,Flash,0,,-1878.021,-1714.655,-1710.527,-1026.124,,

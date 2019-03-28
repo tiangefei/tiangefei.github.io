@@ -60,3 +60,14 @@ h2 {
 .arc path {
     stroke: #fff;
 }
+
+#pie-chart{
+    text-align: center;
+}
+
+#clicktext{
+    font-family: 'Amatic SC';
+    font-size: 20pt;
+    color:white;
+    cursor: pointer;
+}
