@@ -176,6 +176,7 @@ d3.queue()
                 if(player_dict[key] > 4 ) {
                     playertext.textContent = "Team2 : Player " + (player_dict[key] - 4);
                 }
+                playertext.setAttribute('id', 'playertext');
                 playertext.setAttribute('x', '180');
                 playertext.setAttribute('y', 35 + player_dict[key] * 32.5);
                 playertext.setAttribute('id', 'playertext');
@@ -274,7 +275,12 @@ d3.queue()
 
 
     for(var key in hitbox_dict) {
-        document.getElementById(key).textContent = (hitbox_dict[key] / all_shots  * 100).toFixed(2) + "%";
+        document.getElementById(key + "-text").textContent = (hitbox_dict[key] / all_shots  * 100).toFixed(2) + "%";
+    }
+
+    for(var key in hitbox_dict) {
+        var color = "hsl(" + String(parseInt(80 - (hitbox_dict[key] / all_shots  * 100 * 2))) + ", 100%, 50%)";
+        document.getElementById(key).setAttribute('fill', color);
     }
 
     var weapons_dict = {};
@@ -290,35 +296,37 @@ d3.queue()
         }
     });
 
-    var weapon_text;
-    var damage_bar;
-    var count = 0;
+    // var weapon_text;
+    // var damage_bar;
+    // var count = 0;
 
-    for (var key in weapons_dict) {
-        weapon_text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-            weapon_text.textContent = key;
-            weapon_text.setAttribute('x', '180');
-            weapon_text.setAttribute('y', 25 + 18 * count);
-            weapon_text.setAttribute('id', 'weapon_text');
-            weapon_text.setAttribute('fill', 'tomato');
-            document.getElementById("graphs-line").appendChild(weapon_text);
-        damage_bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            damage_bar.setAttribute('x', '260');
-            damage_bar.setAttribute('y', 13 + 18 * count);
-            damage_bar.setAttribute('height', '15');
-            damage_bar.setAttribute('width', weapons_dict[key] / 12);
-            damage_bar.setAttribute('fill', 'tomato');
-        document.getElementById("graphs-line").appendChild(damage_bar);
+    // for (var key in weapons_dict) {
+    //     weapon_text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    //         weapon_text.textContent = key;
+    //         weapon_text.setAttribute('x', '180');
+    //         weapon_text.setAttribute('y', 25 + 18 * count);
+    //         weapon_text.setAttribute('id', 'weapon_text');
+    //         weapon_text.setAttribute('fill', 'tomato');
+    //         document.getElementById("graphs-line").appendChild(weapon_text);
+    //     damage_bar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    //         damage_bar.setAttribute('x', '260');
+    //         damage_bar.setAttribute('y', 13 + 18 * count);
+    //         damage_bar.setAttribute('height', '15');
+    //         damage_bar.setAttribute('width', weapons_dict[key] / 12);
+    //         damage_bar.setAttribute('fill', 'tomato');
+    //     document.getElementById("graphs-line").appendChild(damage_bar);
 
-        count += 1;
-    }
+    //     count += 1;
+    // }
 
     var dataset = []
     for (var key in weapons_dict) {
-        var pair = [];
-        pair.push(key);
-        pair.push(weapons_dict[key]);
-        dataset.push(pair);
+        if(key != "Flash" && key != "Molotov"){
+            var pair = [];
+            pair.push(key);
+            pair.push(weapons_dict[key]);
+            dataset.push(pair);
+        }
     }
 
     var pie = d3.pie()
@@ -329,22 +337,24 @@ d3.queue()
             
     var piedata = pie(dataset);
 
-    var width = 800;
-    var height = 800;
+    var width = 625;
+    var height = 450;
 
-    var outerRadius = width / 4;
+    var outerRadius = width / 5.5;
     var innerRadius = 0;
     var arc = d3.arc()
                 .outerRadius(outerRadius)
                 .innerRadius(innerRadius);
 
-    var svg = d3.select("#pie");
+    var svg = d3.select("#graphs-line");
+
+    var x = width / 2 + 175;
 
     var arcs = svg.selectAll('g')
                   .data(piedata)
                   .enter()
                   .append('g')
-                  .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+                  .attr('transform', 'translate(' + x + ',' + height / 2 + ')');
     
     var colors = d3.schemeCategory20;
     arcs.append('path')
@@ -361,6 +371,7 @@ d3.queue()
     });
 
     arcs.append('text')
+    .attr('id', 'pietext')
     .attr('transform', function(d, i){
         if(i % 2 == 0) {
             var x = arc.centroid(d)[0] * 2.8;
@@ -373,7 +384,14 @@ d3.queue()
      
       return 'translate(' + x + ', ' + y + ')';
     })
-    .attr('fill', 'gold')
+    .attr('fill', function(d, i){
+        if(i <= 19) {
+            return colors[i];
+        }
+        else{
+            return colors[i - 19];
+        };
+    })
     .attr('text-anchor', 'middle')
     .text(function(d){
       var percent = Number(d.value) / d3.sum(dataset, function(d){
@@ -383,7 +401,14 @@ d3.queue()
     })
 
     arcs.append('line')
-    .attr('stroke', 'gold')
+    .attr('stroke', function(d,i){
+        if(i <= 19) {
+            return colors[i];
+        }
+        else{
+            return colors[i - 19];
+        };
+    })
     .attr('x1', function(d){ return arc.centroid(d)[0] * 2; })
     .attr('y1', function(d){ return arc.centroid(d)[1] * 2; })
     .attr('x2', function(d, i){
@@ -427,9 +452,9 @@ function showUtility() {
 }
 var hitboxs = ["Chest", "Head", "Stomach", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Generic"];
 
-for(i = 0; i < hitboxs.length; i++) {
-    document.getElementById(hitboxs[i]).style.display = "none";
-}
+// for(i = 0; i < hitboxs.length; i++) {
+//     document.getElementById(hitboxs[i]).style.display = "none";
+// }
 
 function showHitbox(hitbox) {
     for(i = 0; i < hitboxs.length; i++) {

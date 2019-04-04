@@ -38,7 +38,7 @@ h2 {
 #legendtext{
     font-family: 'Amatic SC';
     font-size: 15pt;
-    color:white;
+    color:black;
 }
 #charts{
     margin-top: 3;
@@ -71,3 +71,45 @@ h2 {
     color:white;
     cursor: pointer;
 }
+#pietext{
+    font-family: 'Amatic SC';
+    font-size: 15pt;
+    font-weight:bold
+}
+#playertext{
+    font-family: 'Amatic SC';
+    font-size: 17pt;
+} 
+#Head-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#Chest-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#Stomach-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#LeftArm-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#RightArm-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#LeftLeg-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#RightLeg-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+#Generic-text{
+    font-family: 'Amatic SC';
+    font-weight:bold;
+} 
+         
