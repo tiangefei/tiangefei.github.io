@@ -9,6 +9,8 @@
     </head>
 
     <body>
+
+
         <div id="title">
             <br>
             <br>
@@ -75,28 +77,30 @@
         <br>
 
         <div id="graphs">
-            <svg id="graphs-line" width="800" height="450">
+            <svg id="graphs-line" width="800" height="700">
 
-                <rect id="Generic" x="0" y="0" width="150" height="450" stroke="white" stroke-width="3"></rect>
-                <rect x="175" y="0" width="625" height="450" stroke="white" stroke-width="3"></rect>
-                <ellipse id="Head" cx="75" cy="105" rx="30" ry="35" stroke="white" stroke-width="3"></ellipse>
-                <rect id="Chest" x="35" y="145" width="80" height="50" stroke="white" stroke-width="3"></rect>
-                <rect id="Stomach" x="35" y="195" width="80" height="50" stroke="white" stroke-width="3"></rect>
-                <ellipse id="LeftArm" cx="20" cy="195" rx="7" ry="45" stroke="white" stroke-width="3"></ellipse>
-                <ellipse id="RightArm" cx="130" cy="195" rx="7" ry="45" stroke="white" stroke-width="3"></ellipse>
-                <ellipse id="LeftLeg" cx="50" cy="310" rx="15" ry="60" stroke="white" stroke-width="3"></ellipse>
-                <ellipse id="RightLeg" cx="100" cy="310" rx="15" ry="60" stroke="white" stroke-width="3"></ellipse>
-                <!-- <rect x="47" y="400" width="55" height="20" stroke="white" stroke-width="3" onclick=showGeneric()></rect> -->
+                <rect x="0" y="0" width="150" height="450" stroke="white" stroke-width="3"></rect>
+                <!-- <rect x="175" y="0" width="625" height="450" stroke="white" stroke-width="3"></rect> -->
+                <rect x="0" y="0" width="800" height="700" stroke="white" stroke-width="3"></rect>
+                <ellipse id="Head" cx="695" cy="85" rx="30" ry="35" stroke="white" stroke-width="3"></ellipse>
+                <rect id="Chest" x="655" y="125" width="80" height="50" stroke="white" stroke-width="3"></rect>
+                <rect id="Stomach" x="655" y="175" width="80" height="50" stroke="white" stroke-width="3"></rect>
+                <ellipse id="LeftArm" cx="640" cy="175" rx="7" ry="45" stroke="white" stroke-width="3"></ellipse>
+                <ellipse id="RightArm" cx="750" cy="175" rx="7" ry="45" stroke="white" stroke-width="3"></ellipse>
+                <ellipse id="LeftLeg" cx="670" cy="290" rx="15" ry="60" stroke="white" stroke-width="3"></ellipse>
+                <ellipse id="RightLeg" cx="720" cy="290" rx="15" ry="60" stroke="white" stroke-width="3"></ellipse>
+                <!-- <image id="Generic" xlink:href="csicon.png" x="62" y="375" height="25" width="25" fill="red" />  -->
+                <rect id="Generic" x="667" y="380" width="55" height="20" stroke="white" stroke-width="3" font-weight="bold"></rect>
 
-                <text id="Head-text" x="60" y="105" fill="black"></text>
-                <text id="Chest-text" x="60" y="180" fill="black"></text>
-                <text id="Stomach-text" x="60" y="230" fill="black"></text>
-                <text id="LeftArm-text" x="10" y="200" fill="black"></text>
-                <text id="RightArm-text" x="120" y="200" fill="black"></text>
-                <text id="LeftLeg-text" x="40" y="300" fill="black"></text>
-                <text id="RightLeg-text" x="90" y="300" fill="black"></text>
-                <text id="Generic-text" x="60" y="390" fill="black"></text>
-                <text id="legendtext" x="55" y="418" fill="black" onclick=showGeneric()>Generic</text>
+                <text id="Head-text" x="680" y="85" fill="black" font-weight="bold"></text>
+                <text id="Chest-text" x="680" y="160" fill="black" font-weight="bold"></text>
+                <text id="Stomach-text" x="680" y="210" fill="black" font-weight="bold"></text>
+                <text id="LeftArm-text" x="605" y="180" fill="white" font-weight="bold"></text>
+                <text id="RightArm-text" x="760" y="180" fill="white" font-weight="bold"></text>
+                <text id="LeftLeg-text" x="657" y="280" fill="black" font-weight="bold"></text>
+                <text id="RightLeg-text" x="708" y="280" fill="black" font-weight="bold"></text>
+                <text id="Generic-text" x="680" y="370" fill="white" font-weight="bold"></text>
+                <text id="legendtext" x="672" y="398" fill="black" onclick=showGeneric()>Generic</text>
 
             </svg>
         </div>

@@ -185,6 +185,7 @@ d3.queue()
 
             dmgtext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                 dmgtext.textContent = dmg_dict[key];
+                dmgtext.setAttribute('id', 'dmgtext');
                 dmgtext.setAttribute('x', '750');
                 dmgtext.setAttribute('y', 35 + player_dict[key] * 32.5);
                 dmgtext.setAttribute('id', 'dmgtext');
@@ -225,8 +226,6 @@ d3.queue()
             utility_dict[d.att_id] += 1;
         }
     })
-
-    console.log(utility_dict);
 
     for(var key in utility_dict) {
         takenbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -279,7 +278,7 @@ d3.queue()
     }
 
     for(var key in hitbox_dict) {
-        var color = "hsl(" + String(parseInt(80 - (hitbox_dict[key] / all_shots  * 100 * 2))) + ", 100%, 50%)";
+        var color = "hsl(" + String(parseInt(60 - (hitbox_dict[key] / all_shots  * 100))) + ", 100%, 50%)";
         document.getElementById(key).setAttribute('fill', color);
     }
 
@@ -330,17 +329,21 @@ d3.queue()
     }
 
     var pie = d3.pie()
-                .sort(null)
+                // .sort(function(a,b){
+                //     a[1].localeCompare(b[1]);
+                // })
                 .value(function(d) {
                     return d[1]
                 });
             
     var piedata = pie(dataset);
 
-    var width = 625;
-    var height = 450;
+    // var width = 625;
+    var width = 800;
+    // var height = 450;
+    var height = 800;
 
-    var outerRadius = width / 5.5;
+    var outerRadius = width / 4.5;
     var innerRadius = 0;
     var arc = d3.arc()
                 .outerRadius(outerRadius)
@@ -348,13 +351,15 @@ d3.queue()
 
     var svg = d3.select("#graphs-line");
 
-    var x = width / 2 + 175;
+    var x = width / 2 - 50;
 
     var arcs = svg.selectAll('g')
                   .data(piedata)
                   .enter()
                   .append('g')
-                  .attr('transform', 'translate(' + x + ',' + height / 2 + ')');
+                  .attr('transform', 'translate(' + x + ',' + height / 1.71 + ')')
+                  .attr('data-toggle', "tooltip")
+                  .attr('title', "FUCK!");
     
     var colors = d3.schemeCategory20;
     arcs.append('path')
@@ -373,13 +378,24 @@ d3.queue()
     arcs.append('text')
     .attr('id', 'pietext')
     .attr('transform', function(d, i){
-        if(i % 2 == 0) {
-            var x = arc.centroid(d)[0] * 2.8;
-            var y = arc.centroid(d)[1] * 2.8;
+        var percent = Number(d.value) / d3.sum(dataset, function(d){
+            return d[1];
+          }) * 100; 
+        if(percent >= 2.4) {
+            var x = arc.centroid(d)[0] * 2.7;
+            var y = arc.centroid(d)[1] * 2.6;
+        }
+        else if(percent < 2.4 && percent > 0.9){
+            var x = arc.centroid(d)[0] * (2.7 + 2.2 - percent);
+            var y = arc.centroid(d)[1] * (2.6 + 2.2 - percent);
+        }
+        else if(percent <= 0.9 && percent > 0.35){
+            var x = arc.centroid(d)[0] * (2.7 + 2.2 - percent * 1.5);
+            var y = arc.centroid(d)[1] * (2.6 + 2.2 - percent * 1.5);
         }
         else{
-            var x = arc.centroid(d)[0] * 3.5;
-            var y = arc.centroid(d)[1] * 3.5;
+            var x = arc.centroid(d)[0] * (2.7 + 2.5 - percent * 1.5);
+            var y = arc.centroid(d)[1] * (2.6 + 2.5 - percent * 1.5);
         }
      
       return 'translate(' + x + ', ' + y + ')';
@@ -412,19 +428,25 @@ d3.queue()
     .attr('x1', function(d){ return arc.centroid(d)[0] * 2; })
     .attr('y1', function(d){ return arc.centroid(d)[1] * 2; })
     .attr('x2', function(d, i){
-        if(i % 2 == 0) {
-            return arc.centroid(d)[0] * 2.5;
+        var percent = Number(d.value) / d3.sum(dataset, function(d){
+            return d[1];
+          }) * 100;
+        if(percent >= 2.4) {
+            return arc.centroid(d)[0] * 2.4;
         }
         else{
-            return arc.centroid(d)[0] * 3.2;
+            return arc.centroid(d)[0] * (2.4 + 2.2 - percent);
         }
     })
     .attr('y2', function(d, i){
-        if(i % 2 == 0) {
-            return arc.centroid(d)[1] * 2.5;
+        var percent = Number(d.value) / d3.sum(dataset, function(d){
+            return d[1];
+          }) * 100;
+        if(percent >= 2.4) {
+            return arc.centroid(d)[1] * 2.4;
         }
         else{
-            return arc.centroid(d)[1] * 3.2;
+            return arc.centroid(d)[1] * (2.4 + 2.2 - percent);
         }
     });
 

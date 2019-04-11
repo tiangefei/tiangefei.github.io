@@ -73,10 +73,18 @@ h2 {
 }
 #pietext{
     font-family: 'Amatic SC';
-    font-size: 15pt;
-    font-weight:bold
+    font-size: 14pt;
+    font-weight:bold;
 }
 #playertext{
+    font-family: 'Amatic SC';
+    font-size: 17pt;
+} 
+#dmgtext{
+    font-family: 'Amatic SC';
+    font-size: 17pt;
+} 
+#takentext{
     font-family: 'Amatic SC';
     font-size: 17pt;
 } 
@@ -112,4 +120,5 @@ h2 {
     font-family: 'Amatic SC';
     font-weight:bold;
 } 
+
          
