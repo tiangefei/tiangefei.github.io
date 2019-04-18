@@ -520,8 +520,8 @@ function showHitbox(hitbox) {
 }
 
 var flag_dict = {
-    att: 0,
-    vic: 0,
+    att: 1,
+    vic: 1,
     nade: 0,
     smoke: 0,
     flash: 0,
@@ -538,7 +538,9 @@ var color_dict = {
 };
 
 for(var key in flag_dict){
-    document.getElementById(key+ "_position").style.display = "none";
+    if(key != 'att' && key != 'vic') {
+        document.getElementById(key+ "_position").style.display = "none";
+    }
 }
 
 function showSomething(something) {
