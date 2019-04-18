@@ -22,10 +22,38 @@ h2 {
     text-align: center;
     color: white;
 }
+#first-intro{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    max-width: 800px;
+    color: white;
+    margin:auto;
+    background-color: black;
+}
+#intro{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    max-width: 800px;
+    color: white;
+    margin:auto;
+    background-color: black;
+}
+#position_intro{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Amatic SC';
+    max-width: 800px;
+    color: white;
+    margin:auto;
+    background-color: black;
+}
 #winner{
     margin-top: 3;
     text-align: center;
 }
+
 #graphs{
     margin-top: 3;
     text-align: center;
@@ -34,6 +62,48 @@ h2 {
     font-family: 'Amatic SC';
     font-size: 20pt;
     color:white;
+}
+#att_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+#vic_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+#smoke_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+#nade_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+#flash_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+#flame_text{
+    font-family: 'Amatic SC';
+    font-size: 10pt;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
 }
 #legendtext{
     font-family: 'Amatic SC';
@@ -120,5 +190,23 @@ h2 {
     font-family: 'Amatic SC';
     font-weight:bold;
 } 
+#show_att{
+    cursor:pointer;
+}
+#show_vic{
+    cursor:pointer;
+}
+#show_nade{
+    cursor:pointer;
+}
+#show_smoke{
+    cursor:pointer;
+}
+#show_flame{
+    cursor:pointer;
+}
+#show_flash{
+    cursor:pointer;
+}
 
          

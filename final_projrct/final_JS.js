@@ -257,14 +257,49 @@ d3.queue()
             greendot.setAttribute('cy', 808 - (parseFloat(d.att_pos_y) + 3591) / ratio);
             greendot.setAttribute('fill', 'green');
             greendot.setAttribute('r', '2');
-        document.getElementById("position-line").appendChild(greendot);
+        document.getElementById("att_position").appendChild(greendot);
 
         reddot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
             reddot.setAttribute('cx', (parseFloat(d.vic_pos_x) + 4820) / ratio);
             reddot.setAttribute('cy', 808 - (parseFloat(d.vic_pos_y) + 3591) / ratio);
             reddot.setAttribute('fill', 'red');
             reddot.setAttribute('r', '2');
-        document.getElementById("position-line").appendChild(reddot);
+        document.getElementById("vic_position").appendChild(reddot);
+    });
+
+    utility.forEach(function (d) {
+        if(d.nade == 'HE') {
+            redcircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                redcircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
+                redcircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
+                redcircle.setAttribute('fill', 'red');
+                redcircle.setAttribute('r', '10');
+                document.getElementById('nade_position').appendChild(redcircle);
+        }
+        if(d.nade == 'Smoke') {
+            greycircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                greycircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
+                greycircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
+                greycircle.setAttribute('fill', 'black');
+                greycircle.setAttribute('r', '10');
+                document.getElementById('smoke_position').appendChild(greycircle);
+        }
+        if(d.nade == 'Flash') {
+            whitecircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                whitecircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
+                whitecircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
+                whitecircle.setAttribute('fill', 'white');
+                whitecircle.setAttribute('r', '10');
+                document.getElementById('flash_position').appendChild(whitecircle);
+        }
+        if(d.nade == 'Molotov' || d.nade == 'Incendiary') {
+            orangecircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                orangecircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
+                orangecircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
+                orangecircle.setAttribute('fill', 'orange');
+                orangecircle.setAttribute('r', '10');
+                document.getElementById('flame_position').appendChild(orangecircle);
+        }
     });
 
     damage.forEach(function (d) {
@@ -359,7 +394,6 @@ d3.queue()
                   .append('g')
                   .attr('transform', 'translate(' + x + ',' + height / 1.71 + ')')
                   .attr('data-toggle', "tooltip")
-                  .attr('title', "FUCK!");
     
     var colors = d3.schemeCategory20;
     arcs.append('path')
@@ -485,29 +519,65 @@ function showHitbox(hitbox) {
     document.getElementById(hitbox).style.display = "block";
 }
 
-function showHead() {
-    showHitbox("Head");
+var flag_dict = {
+    att: 0,
+    vic: 0,
+    nade: 0,
+    smoke: 0,
+    flash: 0,
+    flame: 0
+};
+
+var color_dict = {
+    att: 'green',
+    vic: 'red',
+    nade: 'red',
+    smoke: 'black',
+    flash: 'white',
+    flame: 'orange'
+};
+
+for(var key in flag_dict){
+    document.getElementById(key+ "_position").style.display = "none";
 }
-function showChest() {
-    showHitbox("Chest");
+
+function showSomething(something) {
+    if(flag_dict[something] == 0) {
+        document.getElementById(something + "_position").style.display = "block";
+        flag_dict[something] = 1;
+        document.getElementById("show_" + something).setAttribute('fill', color_dict[something]);
+        if(something == 'smoke') {
+            document.getElementById(something + "_text").setAttribute('fill', 'white');
+        }
+    } 
+    else if(flag_dict[something] == 1) {
+        document.getElementById(something + "_position").style.display = "none";
+        flag_dict[something] = 0;
+        document.getElementById("show_" + something).setAttribute('fill', 'white');
+        if(something == 'smoke') {
+            document.getElementById(something + "_text").setAttribute('fill', 'black');
+        }
+    }
 }
-function showStomach() {
-    showHitbox("Stomach");
+
+function showAtt() {
+    showSomething("att");
 }
-function showLeftArm() {
-    showHitbox("LeftArm");
+
+function showNade() {
+    showSomething("nade");
 }
-function showRightArm() {
-    showHitbox("RightArm");
+function showSmoke() {
+    showSomething("smoke");
 }
-function showLeftLeg() {
-    showHitbox("LeftLeg");
+function showFlash() {
+    showSomething("flash");
 }
-function showRightLeg() {
-    showHitbox("RightLeg");
+function showFlame() {
+    showSomething("flame");
 }
-function showGeneric() {
-    showHitbox("Generic");
+function showVic() {
+    showSomething("vic");
 }
 
 
