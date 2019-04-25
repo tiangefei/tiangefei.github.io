@@ -23,7 +23,7 @@ h2 {
     color: white;
 }
 #first-intro{
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     font-family: 'Amatic SC';
     max-width: 800px;
@@ -32,7 +32,7 @@ h2 {
     background-color: black;
 }
 #intro{
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     font-family: 'Amatic SC';
     max-width: 800px;
@@ -41,7 +41,7 @@ h2 {
     background-color: black;
 }
 #position_intro{
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     font-family: 'Amatic SC';
     max-width: 800px;
@@ -137,9 +137,10 @@ h2 {
 
 #clicktext{
     font-family: 'Amatic SC';
-    font-size: 20pt;
+    font-size: 16pt;
     color:white;
     cursor: pointer;
+    font-weight: bold;
 }
 #pietext{
     font-family: 'Amatic SC';
@@ -208,5 +209,49 @@ h2 {
 #show_flash{
     cursor:pointer;
 }
+#mypopup {
+    width: 400px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+}
+#mypopup::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: white;
+    position: absolute;
+    left: -6px;
+    top: 68px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: transparent;
+    height: 100%;
+    position: fixed; 
+    overflow: auto; 
+}
+ 
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #555;
+}
 
-         
+li a:hover {
+    background-color: white;
+    color: black;
+}

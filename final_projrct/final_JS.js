@@ -86,14 +86,18 @@ d3.queue()
     var CT_image;
 
     game.forEach(function(d) {
+        var title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+        title.textContent = d.round_type;
         if(d.winner_team == team1 && d.winner_side == "Terrorist") {
             T_image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+            T_image.setAttribute('id', '250');
             T_image.setAttribute('height', '25');
             T_image.setAttribute('width', '25');
             T_image.setAttributeNS('http://www.w3.org/1999/xlink','href','T.png');
             T_image.setAttribute('y', '12.5');
             T_image.setAttribute('x', 100 + (26 * (team1_score + team2_score)));
             team1_score += 1;
+            T_image.appendChild(title);
             document.getElementById('winner-line').append(T_image);
         }
 
@@ -105,6 +109,7 @@ d3.queue()
             CT_image.setAttribute('width', '25');
             CT_image.setAttributeNS('http://www.w3.org/1999/xlink','href','CT.png');
             team1_score += 1;
+            CT_image.appendChild(title);
             document.getElementById('winner-line').append(CT_image);
         }
 
@@ -116,6 +121,7 @@ d3.queue()
             T_image.setAttribute('y', '62.5');
             T_image.setAttribute('x', 100 + (26 * (team1_score + team2_score)));
             team2_score += 1;
+            T_image.appendChild(title);
             document.getElementById('winner-line').append(T_image);
         }
 
@@ -127,6 +133,7 @@ d3.queue()
             CT_image.setAttribute('width', '25');
             CT_image.setAttributeNS('http://www.w3.org/1999/xlink','href','CT.png');
             team2_score += 1;
+            CT_image.appendChild(title);
             document.getElementById('winner-line').append(CT_image);
         }
     });
@@ -162,10 +169,10 @@ d3.queue()
     for(var key in dmg_dict) {
         if(key != 0) {
             playerbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                playerbar.setAttribute('x', 325);
+                playerbar.setAttribute('x', 235);
                 playerbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
                 playerbar.setAttribute('height', '20');
-                playerbar.setAttribute('width', parseInt(dmg_dict[key]) / 8);
+                playerbar.setAttribute('width', parseInt(dmg_dict[key]) / 6);
                 playerbar.setAttribute('fill', 'white');
             document.getElementById("dmg").appendChild(playerbar);
 
@@ -177,8 +184,8 @@ d3.queue()
                     playertext.textContent = "Team2 : Player " + (player_dict[key] - 4);
                 }
                 playertext.setAttribute('id', 'playertext');
-                playertext.setAttribute('x', '180');
-                playertext.setAttribute('y', 35 + player_dict[key] * 32.5);
+                playertext.setAttribute('x', '125');
+                playertext.setAttribute('y', 38 + player_dict[key] * 32.5);
                 playertext.setAttribute('id', 'playertext');
                 playertext.setAttribute('fill', 'white');
             document.getElementById("charts-line").appendChild(playertext);
@@ -187,7 +194,7 @@ d3.queue()
                 dmgtext.textContent = dmg_dict[key];
                 dmgtext.setAttribute('id', 'dmgtext');
                 dmgtext.setAttribute('x', '750');
-                dmgtext.setAttribute('y', 35 + player_dict[key] * 32.5);
+                dmgtext.setAttribute('y', 38 + player_dict[key] * 32.5);
                 dmgtext.setAttribute('id', 'dmgtext');
                 dmgtext.setAttribute('fill', 'white');
             document.getElementById("dmg").appendChild(dmgtext);
@@ -199,18 +206,18 @@ d3.queue()
 
     for(var key in taken_dict) {
         takenbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            takenbar.setAttribute('x', 325);
+            takenbar.setAttribute('x', 235);
             takenbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
             takenbar.setAttribute('height', '20');
             takenbar.setAttribute('id', 'takenbar')
-            takenbar.setAttribute('width', parseInt(taken_dict[key]) / 8);
+            takenbar.setAttribute('width', parseInt(taken_dict[key]) / 6);
             takenbar.setAttribute('fill', 'gold');
         document.getElementById("taken").appendChild(takenbar);
 
         takentext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             takentext.textContent = taken_dict[key];
             takentext.setAttribute('x', '750');
-            takentext.setAttribute('y', 35 + player_dict[key] * 32.5);
+            takentext.setAttribute('y', 38 + player_dict[key] * 32.5);
             takentext.setAttribute('id', 'takentext');
             takentext.setAttribute('fill', 'gold');
             document.getElementById("taken").appendChild(takentext);
@@ -229,18 +236,18 @@ d3.queue()
 
     for(var key in utility_dict) {
         takenbar = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            takenbar.setAttribute('x', 325);
+            takenbar.setAttribute('x', 235);
             takenbar.setAttribute('y', 20 + parseInt(player_dict[key]) * 32.5);
             takenbar.setAttribute('height', '20');
             takenbar.setAttribute('id', 'takenbar')
-            takenbar.setAttribute('width', parseInt(utility_dict[key]) * 8);
+            takenbar.setAttribute('width', parseInt(utility_dict[key]) * 9);
             takenbar.setAttribute('fill', 'green');
         document.getElementById("utility").appendChild(takenbar);
 
         takentext = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             takentext.textContent = utility_dict[key];
             takentext.setAttribute('x', '750');
-            takentext.setAttribute('y', 35 + player_dict[key] * 32.5);
+            takentext.setAttribute('y', 38 + player_dict[key] * 32.5);
             takentext.setAttribute('id', 'takentext');
             takentext.setAttribute('fill', 'green');
             document.getElementById("utility").appendChild(takentext);
@@ -272,7 +279,7 @@ d3.queue()
             redcircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 redcircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
                 redcircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
-                redcircle.setAttribute('fill', 'red');
+                redcircle.setAttribute('fill', 'skyblue');
                 redcircle.setAttribute('r', '10');
                 document.getElementById('nade_position').appendChild(redcircle);
         }
@@ -280,7 +287,7 @@ d3.queue()
             greycircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 greycircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
                 greycircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
-                greycircle.setAttribute('fill', 'black');
+                greycircle.setAttribute('fill', 'YellowGreen');
                 greycircle.setAttribute('r', '10');
                 document.getElementById('smoke_position').appendChild(greycircle);
         }
@@ -288,7 +295,7 @@ d3.queue()
             whitecircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
                 whitecircle.setAttribute('cx', (parseFloat(d.nade_land_x) + 4820) / ratio);
                 whitecircle.setAttribute('cy', 808 - (parseFloat(d.nade_land_y) + 3591) / ratio);
-                whitecircle.setAttribute('fill', 'white');
+                whitecircle.setAttribute('fill', 'lightyellow');
                 whitecircle.setAttribute('r', '10');
                 document.getElementById('flash_position').appendChild(whitecircle);
         }
@@ -364,9 +371,6 @@ d3.queue()
     }
 
     var pie = d3.pie()
-                // .sort(function(a,b){
-                //     a[1].localeCompare(b[1]);
-                // })
                 .value(function(d) {
                     return d[1]
                 });
@@ -508,10 +512,6 @@ function showUtility() {
 }
 var hitboxs = ["Chest", "Head", "Stomach", "LeftArm", "RightArm", "LeftLeg", "RightLeg", "Generic"];
 
-// for(i = 0; i < hitboxs.length; i++) {
-//     document.getElementById(hitboxs[i]).style.display = "none";
-// }
-
 function showHitbox(hitbox) {
     for(i = 0; i < hitboxs.length; i++) {
         document.getElementById(hitboxs[i]).style.display = "none";
@@ -531,9 +531,9 @@ var flag_dict = {
 var color_dict = {
     att: 'green',
     vic: 'red',
-    nade: 'red',
-    smoke: 'black',
-    flash: 'white',
+    nade: 'skyblue',
+    smoke: 'YellowGreen',
+    flash: 'lightyellow',
     flame: 'orange'
 };
 
@@ -548,17 +548,11 @@ function showSomething(something) {
         document.getElementById(something + "_position").style.display = "block";
         flag_dict[something] = 1;
         document.getElementById("show_" + something).setAttribute('fill', color_dict[something]);
-        if(something == 'smoke') {
-            document.getElementById(something + "_text").setAttribute('fill', 'white');
-        }
     } 
     else if(flag_dict[something] == 1) {
         document.getElementById(something + "_position").style.display = "none";
         flag_dict[something] = 0;
         document.getElementById("show_" + something).setAttribute('fill', 'white');
-        if(something == 'smoke') {
-            document.getElementById(something + "_text").setAttribute('fill', 'black');
-        }
     }
 }
 
@@ -581,8 +575,3 @@ function showFlame() {
 function showVic() {
     showSomething("vic");
 }
-
-
-
-
-
