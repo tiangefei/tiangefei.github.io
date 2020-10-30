@@ -1,0 +1,60 @@
+#scalability_x5F_text{
+    display: none;
+}
+#food_x5F_text{
+    display: none;
+}
+#production_x5F_text{
+    display: none;
+}
+#process_x5F_text{
+    display: none;
+}
+#transportation_x5F_text{
+    display: none;
+}
+#fooddiversity_x5F_text{
+    display: none;
+}
+#preference_x5F_text{
+    display: none;
+}
+#culture_x5F_text{
+    display: none;
+}
+#cultureexchange_x5F_text{
+    display: none;
+}
+#identity_x5F_text{
+    display: none;
+}
+#center_text{
+    display: none;
+}
+path.leftmove{
+    stroke-dasharray: 100;
+    animation: dash 5s linear forwards;
+}
+
+path.rightmove{
+    stroke-dasharray: 100;
+    animation: dash 5s linear forwards;
+}
+
+path.middletopmove{
+    stroke-dasharray: 100;
+    animation: dash 5s linear backwards;
+    animation-direction: reverse;
+}
+
+path.middlebottommove{
+    stroke-dasharray: 100;
+    animation: dash 5s linear backwards;
+    animation-direction: reverse;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
