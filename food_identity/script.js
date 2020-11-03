@@ -38,8 +38,8 @@ process.addEventListener('mousemove', e => {
 
     document.getElementById("process").style.opacity = 1;
     document.getElementById("process_x5F_text").style.display = "block";
+    document.getElementById("pie_2").style.display = "block"
     document.getElementById("process_x5F_text").style.opacity = 1;
-
     document.getElementById("leftline").classList.add("leftmove");
     document.getElementById("middlebottomline").classList.add("middlebottommove");
 
@@ -52,6 +52,7 @@ process.addEventListener('mouseout', e => {
 
     document.getElementById("process").style.opacity = 1;
     document.getElementById("process_x5F_text").style.display = "none";
+    document.getElementById("pie_2").style.display = "none"
     document.getElementById("process_x5F_text").style.opacity = 1;
 
     document.getElementById("leftline").classList.remove("leftmove");
@@ -210,6 +211,7 @@ consumption.addEventListener('mousemove', e => {
 
     document.getElementById("consumption").style.opacity = 1;
     document.getElementById("cultureexchange_x5F_text").style.display = "block";
+    document.getElementById("pie").style.display = "block"
     document.getElementById("cultureexchange_x5F_text").style.opacity = 1;
 
     document.getElementById("rightline").classList.add("rightmove");
@@ -223,6 +225,7 @@ consumption.addEventListener('mouseout', e => {
 
     document.getElementById("consumption").style.opacity = 1;
     document.getElementById("cultureexchange_x5F_text").style.display = "none";
+    document.getElementById("pie").style.display = "none"
     document.getElementById("cultureexchange_x5F_text").style.opacity = 1;
 
     document.getElementById("rightline").classList.remove("rightmove");
@@ -248,7 +251,7 @@ culture.addEventListener('mouseout', e => {
     document.getElementById("culture_x5F_text").style.opacity = 1;
 });
 
-identity.addEventListener('mousemove', e => {
+identity.addEventListener('mouseover', e => {
     console.log("mouse in");
 
     document.getElementById("left_1_").style.opacity = 0.2;

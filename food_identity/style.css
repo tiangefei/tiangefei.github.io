@@ -58,3 +58,14 @@ path.middlebottommove{
         stroke-dashoffset: 1000;
     }
 }
+
+#pie{
+    display: none;
+}
+#pie_2{
+    display: none;
+}
+
+.highcharts-series-group{
+    scale: 0.3;
+}
