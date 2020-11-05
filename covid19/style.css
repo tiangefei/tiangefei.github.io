@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+article {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    line-height: 26pt;
+    text-align: justify;
+}
+
+body {
+    background-image: url("BG_colro.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.title {
+    font: italic 45px sans-serif;
+    fill: black;
+}
+
+.sub-title {
+    fill:black;
+}
+
+#header_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-width: 100%;
+}
+
+#container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    flex-direction: column;
+}
+
+#header {
+    margin-left: 0;
+    margin-right: 0;
+	flex: 1 0 40%;
+	display: flex;
+	flex-direction: row;
+}
+
+#introduction {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex: 1 0 50%;
+    /* display: flex; */
+    flex-direction: row;
+}
+
+#nationwide {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex: 1 0 50%;
+    flex-direction: row;
+}
+
+#mass {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex: 1 0 50%;
+    flex-direction: row;
+}
+
+#conclusion {
+    margin-left: 20%;
+    margin-right: 20%;
+    flex: 1 0 20%;
+    flex-direction: row;
+}
+
+h2 {
+    width: 100%;
+}
+
+img {
+    padding: 5%;
+    width: 100%;
+	height: flex;
+}
+
+a:link, a:visited {
+    color: #4682b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#hove_bar {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10%;
+    padding: 0;
+    width: 10%;
+    background-color: transparent;
+    height: 100%;
+    position: fixed; 
+    overflow: auto; 
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+

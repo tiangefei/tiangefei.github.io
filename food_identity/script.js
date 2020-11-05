@@ -6,8 +6,8 @@ scalability = document.getElementById("scalability");
 food = document.getElementById("food");
 
 transportation.addEventListener('mousemove', e => {
-    document.getElementById("right").style.opacity = 0.2;
-    document.getElementById("middle_1_").style.opacity = 0.2;
+    document.getElementById("right").style.opacity = 0.5;
+    document.getElementById("middle_1_").style.opacity = 0.5;
 
     document.getElementById("transportation").style.opacity = 1;
     document.getElementById("transportation_x5F_text").style.display = "block";

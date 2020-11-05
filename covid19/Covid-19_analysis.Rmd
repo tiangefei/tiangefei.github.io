@@ -1,0 +1,171 @@
+---
+title: "Covid-19 analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+install.packages(c("maps", "mapdata"))
+library(maps)
+require(scales)
+
+```
+
+## Loading the data
+```{r}
+
+# Load the data from file
+covid.country <- read_csv("Country.csv")
+covid.states <- read_csv("States.csv")
+
+MainStates <- map_data("state")
+
+```
+
+## Processing the data
+```{r}
+
+# Find daily new cases and new death in the entire country
+covid.country <- covid.country %>%
+  arrange(date) %>%
+  mutate(newCase = cases - lag(cases, default = 0)) %>%
+  mutate(newDeath = deaths - lag(deaths, default = 0)) %>%
+  mutate(compareToLastDay = newCase - lag(newCase, default = 0)) %>%
+  mutate(moreOrLess = ifelse(compareToLastDay < 0, "less", "more"))
+
+cases <- covid.country %>%
+  select(date, newCase) %>%
+  rename(amount = newCase) %>%
+  mutate(type = "Positive")
+
+deaths <- covid.country %>%
+  select(date, newDeath) %>%
+  rename(amount = newDeath) %>%
+  mutate(type = "Death")
+
+covid.countryCases <- rbind(deaths, cases)
+
+# For the states dataset, filter out only Massachusetts data
+# Then find the daily new cases and new death
+covid.mass <- covid.states %>%
+  filter(state == "Massachusetts") %>%
+  mutate(newCase = cases - lag(cases, default = 0)) %>%
+  mutate(newDeath = deaths - lag(deaths, default = 0)) %>%
+  mutate(phase = NA)
+
+mass.cases <- covid.country %>%
+  select(date, newCase) %>%
+  rename(amount = newCase) %>%
+  mutate(type = "Positive")
+
+mass.deaths <- covid.country %>%
+  select(date, newDeath) %>%
+  rename(amount = newDeath) %>%
+  mutate(type = "Death")
+
+covid.massCases <- rbind(mass.cases, mass.deaths)
+
+# Total cases for each state
+# Combine the state data with map data
+state.data <- covid.states %>%
+  filter(date == "2020-10-20") %>%
+  mutate("region" = tolower(state))
+
+MergedStates <- inner_join(MainStates, state.data, by = "region")
+
+```
+
+## Nationwide new cases
+```{r}
+
+levels(as.factor(covid.countryCases$type))
+
+# Stacked bar chart for country-wide daily new cases and deaths
+ggplot(covid.countryCases, aes(x = date, y = amount, fill = factor(type, levels = c("Positive", "Death")))) +
+  geom_bar(stat="identity") +
+  labs(x = "Date", y = "Count") +
+  scale_y_sqrt() +
+  theme_classic() +
+  theme(legend.position = c(0.1, 0.9), plot.title = element_text(hjust = 0.5, size = 12)) +
+  labs(fill = element_blank(), title="The daily new cases and death from 1/21/2020 to 10/20/2020")
+
+ggsave(file="national.png")
+
+# Heat map for state data
+ggplot(MergedStates, aes(long, lat, group = group))+
+  geom_polygon(aes(fill = cases), color = "white")+
+  scale_fill_viridis_c(option = "C") +
+    theme(legend.position = c(0.94, 0.19), plot.title = element_text(hjust = 0.5)) +
+    labs(fill = "Cases", title="The total cases by state") +
+    theme(axis.title.x=element_blank(),
+          axis.text.x=element_blank(),
+          axis.ticks.x=element_blank(),
+          axis.title.y=element_blank(),
+          axis.text.y=element_blank(),
+          axis.ticks.y=element_blank(),
+          panel.grid.major = element_blank(), 
+          panel.grid.minor = element_blank(),
+          panel.background = element_blank())
+
+ggsave(file="national_map.png")
+
+# Two side bar chart for growth rate
+ggplot(covid.country, aes(x=date, y=compareToLastDay)) + 
+  geom_bar(stat='identity', aes(fill=moreOrLess), width=.5) +
+  theme_minimal() +
+  scale_fill_manual(name="Cases", 
+                    labels = c("Less than the last day", "More than the last day"), 
+                    values = c("less"="#00ba38", "more"="#f8766d")) + 
+  labs(title= "The daily amount of new cases compare to last day") +
+  theme(legend.position = c(0.132, 0.12), plot.title = element_text(hjust = 0.5, size=12))
+  
+ggsave(file="national_growth.png")
+
+```
+
+
+## Mass new cases
+```{r}
+
+ggplot()+
+  geom_rect(aes(xmin = as.Date("2020-03-10"),
+                xmax = as.Date("2020-03-15"),
+                ymin = -Inf, 
+                ymax = Inf, 
+                fill = 'State emergency'), 
+                alpha = 0.5) +
+  geom_rect(aes(xmin = as.Date("2020-03-15"),
+                xmax = as.Date("2020-05-01"),
+                ymin = -Inf, 
+                ymax = Inf, 
+                fill = 'Limited capacity in public space, closure of all Boston Public Schools'), 
+                alpha = 0.5) +
+  geom_rect(aes(xmin = as.Date("2020-05-01"),
+                xmax = as.Date("2020-07-06"),
+                ymin = -Inf, 
+                ymax = Inf, 
+                fill = "All Massachusetts residents must to wear a mask in public places"), 
+                alpha = 0.5)+
+  geom_rect(aes(xmin = as.Date("2020-07-06"),
+                xmax = as.Date("2020-09-01"),
+                ymin = -Inf, 
+                ymax = Inf, 
+                fill = "Phase one of reopening Massachusetts"), 
+                alpha = 0.5)+
+  geom_rect(aes(xmin = as.Date("2020-09-01"),
+                xmax = as.Date("2020-10-20"),
+                ymin = -Inf, 
+                ymax = Inf, 
+                fill = "Fall semester begain"), 
+                alpha = 0.5)+
+  geom_line(data = covid.mass, aes(x = date, y = newCase)) +
+  scale_fill_brewer(palette = 'Dark2', name = 'Phase')+
+  labs(x = "New cases", y = "Date", title="The daily new cases with each phase") +
+  theme_classic() +
+  theme(legend.position = c(0.33, 0.2),
+        legend.background = element_rect(fill=alpha('white', 0.8)),
+        plot.title = element_text(hjust = 0.5))
+  
+```
