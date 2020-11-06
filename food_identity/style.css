@@ -1,34 +1,46 @@
-#scalability_x5F_text{
+#scalability{
     display: none;
 }
-#food_x5F_text{
+#food{
     display: none;
 }
-#production_x5F_text{
+#production{
     display: none;
 }
-#process_x5F_text{
+#process{
     display: none;
 }
-#transportation_x5F_text{
+#transportation{
     display: none;
 }
-#fooddiversity_x5F_text{
+#retailing{
     display: none;
 }
-#preference_x5F_text{
+#demand{
     display: none;
 }
-#culture_x5F_text{
+#culture{
     display: none;
 }
-#cultureexchange_x5F_text{
+#consumption{
     display: none;
 }
-#identity_x5F_text{
+#identity{
     display: none;
 }
-#center_text{
+#center{
+    display: none;
+}
+#define{
+    display: none;
+}
+#choose{
+    display: none;
+}
+#process_data{
+    display: none;
+}
+#consumption_data{
     display: none;
 }
 path.leftmove{
@@ -57,15 +69,4 @@ path.middlebottommove{
     to {
         stroke-dashoffset: 1000;
     }
-}
-
-#pie{
-    display: none;
-}
-#pie_2{
-    display: none;
-}
-
-.highcharts-series-group{
-    scale: 0.3;
 }
