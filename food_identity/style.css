@@ -43,6 +43,12 @@
 #consumption_data{
     display: none;
 }
+#production_data{
+    display: none;
+}
+#demand_data{
+    display: none;
+}
 path.leftmove{
     stroke-dasharray: 100;
     animation: dash 5s linear forwards;

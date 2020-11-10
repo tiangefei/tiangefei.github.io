@@ -67,6 +67,7 @@ production.addEventListener('mousemove', e => {
 
     document.getElementById("production").style.opacity = 1;
     document.getElementById("production").style.display = "block";
+    document.getElementById("production_data").style.display = "block";
     document.getElementById("production").style.opacity = 1;
 
     document.getElementById("leftline").classList.add("leftmove");
@@ -81,6 +82,7 @@ production.addEventListener('mouseout', e => {
 
     document.getElementById("production").style.opacity = 1;
     document.getElementById("production").style.display = "none";
+    document.getElementById("production_data").style.display = "none";
     document.getElementById("production").style.opacity = 1;
 
     document.getElementById("leftline").classList.remove("leftmove");
@@ -196,6 +198,7 @@ demand.addEventListener('mousemove', e => {
 
     document.getElementById("demand").style.opacity = 1;
     document.getElementById("demand").style.display = "block";
+    document.getElementById("demand_data").style.display = "block";
     document.getElementById("demand").style.opacity = 1;
 
     document.getElementById("rightline").classList.add("rightmove");
@@ -209,6 +212,7 @@ demand.addEventListener('mouseout', e => {
 
     document.getElementById("demand").style.opacity = 1;
     document.getElementById("demand").style.display = "none";
+    document.getElementById("demand_data").style.display = "none";
     document.getElementById("demand").style.opacity = 1;
 
     document.getElementById("rightline").classList.remove("rightmove");
