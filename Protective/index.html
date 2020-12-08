@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+</head>
+
+<body>
+    <section class="intro">
+        <div class="content">
+            <h1>On July 8, Malaysian comedian Nigel Ng uploaded to YouTube a video titled "DISGUSTED by this Egg
+                Fried Rice Video" under his comedic persona "Uncle Roger." What Ng intended to be a comedic video
+                sparked
+                a firestorm of dismay and disbelief as it ricocheted
+                around the internet.</h1>
+
+            <svg id="svg-content" width=100%>
+                <image href="./view.webp" width=100 height=100 x=0% y=20></image>
+                <text id="text1" x=8% y=90>5.9 Million</text>
+
+                <image href="./like.png" width=100 height=100 x=40% y=20></image>
+                <text id="text1" x=48% y=90>760,000</text>
+
+                <image href="./comment.webp" width=100 height=100 x=80% y=20></image>
+                <text id="text1" x=88% y=90>55,633</text>
+            </svg>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <div id="wrap">
+                <div id="video">
+                    <iframe width=925 height=500 src="https://www.youtube.com/embed/53me-ICi_f8">
+                    </iframe>
+                </div>
+
+                <div id="word-cloud">
+                </div>
+            </div>
+
+            <marquee behavior="scroll" scrollamount="8" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <span>💬10M in 1 month. This woman really triggered a lot of Asian people. Edit: and people around the world who also likes to eat rice.</span>
+                <span>💬Asians normally: *chillin' by themselves*, BBC woman: *cooks rice wrong*, Asians: *UNITED*</span>
+                <span>💬I cringed so hard when she scraped the non-stick pan with a metal spoon. I swear I heard my mom screaming from 50 miles away</span>
+                <span>💬Some Asian countries hate each other, but we agree that the woman's egg fried rice is a big disappointment.</span>
+            </marquee>
+
+            <marquee behavior="scroll" scrollamount="8" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                <span> </span>
+                <span>💬This is what I don't like about European / American people when making Asian food, they feel pretentious by how to cook it even though there are still many mistakes in making it. Haiyahhh....     Hey uncle roger Ive been using a measuring cup and a sauce pot on an induction stove forever and my rice always comes out PERFECT!!! Lmaooo  ew msg</span>
+                <span>💬SHE USE COLENDER AND SAUCE PAN SAUCE  PAN???   so dissapointed</span>
+                <span>💬Her eyes look so sad, like someone is pointing a gun at her from behind the camera and forcing her to do the video</span>
+                <span>💬As an asian, this video made me understand why italians die after watching carbonara videos</span>
+                <span>💬Those 11K dislikes are from people who drain their rice with colander.</span>
+            </marquee>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1>It's amazing and fast.</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h1>See the <a href="http://caniuse.com/#feat=viewport-units">browser support.</a></h1>
+        </div>
+    </section>
+
+    <footer>
+        Made by <a href="https://www.twitter.com/ckor">@ckor</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>

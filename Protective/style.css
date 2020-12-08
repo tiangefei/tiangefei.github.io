@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'HelveticaNeue';
+}
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #fe4b74;
+    height: 100vh;
+}
+section:nth-of-type(2n) {
+    background-color: #373b44;
+}
+.intro {
+    height: 100vh;
+}
+.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+h1 {
+    font-size: 3em;
+    display: block;
+    color: white;
+    font-weight: 300;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #c3cad9;
+}
+a {
+    font-weight: 700;
+    color: #373b44;
+    position: relative;
+}
+a:hover {
+    opacity: 0.8;
+}
+a:active {
+    top: 1px;
+}
+footer {
+    padding: 1% 5%;
+    text-align: center;
+    background-color: #373b44;
+    color: white;
+}
+footer a {
+    color: #fe4b74;
+    font-weight: 500;
+    text-decoration: none;
+}
+#text1{
+    font-family: 'HelveticaNeue';
+    font-size: 3em;
+    display: block;
+    fill: white;
+    font-weight: 200;
+}
+
+#video{
+    flex: 1 0 65%;
+}
+
+#word-cloud{
+    flex: 1 0 35%;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+}
+.example1 h3 {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+}
+   /* Move it (define the animation) */
+@-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+}
+
+marquee {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'HelveticaNeue';
+    font-size: 2em;
+    display: block;
+    color: white;
+    font-weight: 200;
+}
+
+marquee span {
+    margin-left: 200px;
+}
+
+
+
+
+
