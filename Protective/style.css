@@ -31,6 +31,7 @@ h1 {
     color: white;
     font-weight: 300;
     text-align: justify;
+    line-height: 60px;
 }
 p {
     font-size: 1.5em;
@@ -150,6 +151,10 @@ marquee span {
 #conclusion h1{
     padding-right: 10%;
     text-align: justify;
+}
+
+b {
+    font-size: 1.5em;
 }
 
 
