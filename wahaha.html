@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小鸡毛今天怎么欺负小白</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            width: 60px;
+            margin-right: 10px;
+            color: #666;
+        }
+
+        input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            color: #ff6b6b;
+            font-weight: bold;
+            min-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>小鸡毛今天怎么欺负小白</h1>
+    <div id="options">
+        <div class="input-group">
+            <label>选项1</label>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <label>选项2</label>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <label>选项3</label>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <label>选项4</label>
+            <input type="text">
+        </div>
+        <div class="input-group">
+            <label>选项5</label>
+            <input type="text">
+        </div>
+    </div>
+    
+    <div id="result"></div>
+    <button onclick="chooseFood()">欺负小白</button>
+
+    <script>
+        function chooseFood() {
+            // 获取所有输入框的值
+            const inputs = document.querySelectorAll('input');
+            const options = [];
+            
+            // 收集非空选项
+            inputs.forEach(input => {
+                if (input.value.trim() !== '') {
+                    options.push(input.value);
+                }
+            });
+
+            const resultDiv = document.getElementById('result');
+            
+            if (options.length === 0) {
+                resultDiv.textContent = "请至少输入一个选项哦～";
+                return;
+            }
+
+            // 随机选择一个选项
+            const randomIndex = Math.floor(Math.random() * options.length);
+            resultDiv.textContent = options[randomIndex];
+        }
+    </script>
+</body>
+</html>
